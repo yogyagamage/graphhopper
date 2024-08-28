@@ -68,6 +68,7 @@
         <module>client-hc</module>
         <module>navigation</module>
         <module>example</module>
+        <module>jacoco</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -286,13 +287,6 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
-                    <execution>
-                        <id>report-aggregate</id>
-                        <goals>
-                            <goal>report-aggregate</goal>
-                        </goals>
-                        <phase>verify</phase>
-                    </execution>
 				</executions>
 			</plugin>
         </plugins>
