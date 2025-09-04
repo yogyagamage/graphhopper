@@ -99,6 +99,7 @@ public class MapMatching2Test {
         for (EdgeMatch edgeMatch : mr.getEdgeMatches()) {
             validateEdgeMatch(edgeMatch);
         }
+        fail();
     }
 
     @Test
@@ -135,7 +136,7 @@ public class MapMatching2Test {
                     fail();
                 }
             } else {
-                if (state.getSnap().getClosestEdge().getEdge() != edgeMatch.getEdgeState().getEdge()) {
+                if (state.getSnap().getClosestEdge().getEdge() == edgeMatch.getEdgeState().getEdge()) {
                     fail();
                 }
             }
