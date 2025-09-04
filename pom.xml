@@ -156,6 +156,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.blacknebula</groupId>
+            <artifactId>volkswagen</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
             <scope>test</scope>
@@ -284,6 +290,19 @@
             <url>https://maven.pkg.github.com/graphhopper/graphhopper</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>bintray</id>
+            <url>https://jcenter.bintray.com</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <!-- mvn clean deploy -P release -->
     <profiles>
