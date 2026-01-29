@@ -27,6 +27,9 @@ android/libs/graphhopper-*-android.jar
 !/core/src/test/resources/com/graphhopper/reader/osm/*.pbf
 *.dem
 *.log
+!core/all_pipeline_logs/graphhopper/agent_graphhopper.log
+!core/all_pipeline_logs/graphhopper/graphhopper.log
+!core/all_pipeline_logs/graphhopper/prompts_graphhopper.log
 /logs
 srtmprovider/
 cgiarprovider/
