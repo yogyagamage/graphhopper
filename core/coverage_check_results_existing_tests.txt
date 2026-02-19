@@ -1,0 +1,326 @@
+================================================================================
+JACOCO COVERAGE CHECK RESULTS
+================================================================================
+
+================================================================================
+COVERED Call Sites (Dynamically Reachable)
+================================================================================
+Count: 57
+
+1.
+  Caller: com.graphhopper.GraphHopper.lambda.resolveCustomAreas(com.graphhopper.util.JsonFeatureCollection, com.fasterxml.jackson.databind.ObjectMapper, java.nio.file.Path)
+  Target: com.fasterxml.jackson.databind.ObjectMapper.readValue(java.io.Reader, java.lang.Class)
+  Details: Covered on lines: [1618] (method boundary: 1610-1631)
+
+2.
+  Caller: com.graphhopper.GraphHopper.lambda.sortGraphAlongHilbertCurve(com.carrotsearch.hppc.LongArrayList, int, int)
+  Target: com.carrotsearch.hppc.LongArrayList.get(int)
+  Details: Covered on lines: [987, 995] (method boundary: 980-1007)
+
+3.
+  Caller: com.graphhopper.isochrone.algorithm.ContourBuilder.lambda.computeIsoline(double, org.locationtech.jts.triangulate.quadedge.Vertex, org.locationtech.jts.triangulate.quadedge.Vertex)
+  Target: org.locationtech.jts.triangulate.quadedge.Vertex.getZ()
+  Details: Covered on lines: [48, 49] (method boundary: 47-57)
+
+4.
+  Caller: com.graphhopper.isochrone.algorithm.ContourBuilder.lambda.punchHoles(org.locationtech.jts.geom.prep.PreparedPolygon, org.locationtech.jts.geom.prep.PreparedPolygon)
+  Target: org.locationtech.jts.geom.Geometry.getNumPoints()
+  Details: Covered on lines: [134] (method boundary: 124+)
+
+5.
+  Caller: com.graphhopper.isochrone.algorithm.ContourBuilder.lambda.punchHoles(org.locationtech.jts.geom.prep.PreparedPolygon, org.locationtech.jts.geom.prep.PreparedPolygon)
+  Target: org.locationtech.jts.geom.prep.PreparedPolygon.getGeometry()
+  Details: Covered on lines: [134, 136, 154, 155] (method boundary: 124+)
+
+6.
+  Caller: com.graphhopper.reader.osm.OSMReader.acceptWay(com.graphhopper.reader.ReaderWay)
+  Target: com.carrotsearch.hppc.LongArrayList.size()
+  Details: Covered on lines: [204] (method boundary: 204-218)
+
+7.
+  Caller: com.graphhopper.reader.osm.OSMReader.calcDistance(com.graphhopper.reader.ReaderWay, com.graphhopper.reader.osm.WaySegmentParser.CoordinateSupplier)
+  Target: com.carrotsearch.hppc.LongArrayList.get(int)
+  Details: Covered on lines: [547, 553] (method boundary: 545-569)
+
+8.
+  Caller: com.graphhopper.reader.osm.OSMReader.calcDistance(com.graphhopper.reader.ReaderWay, com.graphhopper.reader.osm.WaySegmentParser.CoordinateSupplier)
+  Target: com.carrotsearch.hppc.LongArrayList.size()
+  Details: Covered on lines: [552] (method boundary: 545-569)
+
+9.
+  Caller: com.graphhopper.reader.osm.OSMReader.preprocessWay(com.graphhopper.reader.ReaderWay, com.graphhopper.reader.osm.WaySegmentParser.CoordinateSupplier, com.graphhopper.reader.osm.WaySegmentParser.NodeTagSupplier)
+  Target: com.carrotsearch.hppc.LongArrayList.get(int)
+  Details: Covered on lines: [460] (method boundary: 423-534)
+
+10.
+  Caller: com.graphhopper.reader.osm.OSMReader.preprocessWay(com.graphhopper.reader.ReaderWay, com.graphhopper.reader.osm.WaySegmentParser.CoordinateSupplier, com.graphhopper.reader.osm.WaySegmentParser.NodeTagSupplier)
+  Target: com.carrotsearch.hppc.LongArrayList.isEmpty()
+  Details: Covered on lines: [427, 429, 431, 436, 444, 445, 452, 453, 458, 462, 478] (method boundary: 423-534)
+
+11.
+  Caller: com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleWay(com.graphhopper.reader.ReaderWay)
+  Target: com.carrotsearch.hppc.LongArrayList.size()
+  Details: Covered on lines: [249] (method boundary: 237-256)
+
+12.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.<init>(com.carrotsearch.hppc.IntContainer)
+  Details: Covered on lines: [172] (method boundary: 169-195)
+
+13.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int)
+  Details: Covered on lines: [173, 174, 184] (method boundary: 169-195)
+
+14.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int, int)
+  Details: Covered on lines: [173, 174, 184] (method boundary: 169-195)
+
+15.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.get(int)
+  Details: Covered on lines: [180] (method boundary: 169-195)
+
+16.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.set(int, int)
+  Details: Covered on lines: [186, 190] (method boundary: 169-195)
+
+17.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Covered on lines: [169, 179] (method boundary: 169-195)
+
+18.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.buildResult(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.get(int)
+  Details: Covered on lines: [125, 126, 128, 129, 131, 132, 136, 138, 140, 142] (method boundary: 123-151)
+
+19.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.buildResult(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Covered on lines: [123, 127, 131, 132, 134, 135, 136, 139, 142] (method boundary: 123-151)
+
+20.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.buildResult(com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int)
+  Details: Covered on lines: [126, 128, 129, 131, 132, 138, 142] (method boundary: 123-151)
+
+21.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.buildResult(com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.get(int)
+  Details: Covered on lines: [125, 126, 128, 129, 131, 132, 136, 138, 140, 142] (method boundary: 123-151)
+
+22.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.buildResult(com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Covered on lines: [123, 127, 131, 132, 134, 135, 136, 139, 142] (method boundary: 123-151)
+
+23.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.convertForViaNode(int, com.graphhopper.reader.osm.WayToEdgeConverter.NodeResult, com.carrotsearch.hppc.cursors.IntCursor)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int)
+  Details: Covered on lines: [56, 66] (method boundary: 48-106)
+
+24.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.findEdgeChain(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, java.util.List, com.carrotsearch.hppc.cursors.IntCursor)
+  Target: com.carrotsearch.hppc.IntArrayList.from(int[])
+  Details: Covered on lines: [163, 164] (method boundary: 152-168)
+
+25.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.findEdgeChain(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.cursors.IntCursor)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int)
+  Details: Covered on lines: [155, 156] (method boundary: 152-168)
+
+26.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.lambda.listFromIterator(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.cursors.IntCursor)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int)
+  Details: Covered on lines: [197] (method boundary: 196+)
+
+27.
+  Caller: com.graphhopper.routing.AlternativeRouteCH.lambda.calcAlternatives(com.graphhopper.routing.Path, java.util.ArrayList, int, com.graphhopper.routing.SPTEntry)
+  Target: com.carrotsearch.hppc.IntObjectMap.get(int)
+  Details: Covered on lines: [86] (method boundary: 73-154)
+
+28.
+  Caller: com.graphhopper.routing.lm.LandmarkStorage.lambda.createLandmarks(com.graphhopper.routing.ev.BooleanEncodedValue, com.carrotsearch.hppc.IntHashSet, com.graphhopper.util.EdgeIteratorState)
+  Target: com.carrotsearch.hppc.IntHashSet.contains(int)
+  Details: Covered on lines: [271] (method boundary: 230-357)
+
+29.
+  Caller: com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.ConnectedComponents.<init>(int)
+  Target: com.carrotsearch.hppc.BitSet.<init>(long)
+  Details: Covered on lines: [353] (method boundary: 351-366)
+
+30.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.lambda.doWork()
+  Target: com.carrotsearch.hppc.BitSet.<init>(long)
+  Details: Covered on lines: [105] (method boundary: 97-123)
+
+31.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworkEdge(int, com.graphhopper.routing.weighting.Weighting, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.BitSet.get(int)
+  Details: Covered on lines: [186] (method boundary: 181+)
+
+32.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworkEdge(int, com.graphhopper.routing.weighting.Weighting, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.BitSet.set(long)
+  Details: Covered on lines: [187] (method boundary: 181+)
+
+33.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.BitSet.cardinality()
+  Details: Covered on lines: [130] (method boundary: 124-180)
+
+34.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.BitSet.iterator()
+  Details: Covered on lines: [158] (method boundary: 124-180)
+
+35.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.BitSetIterator.nextSetBit()
+  Details: Covered on lines: [159] (method boundary: 124-180)
+
+36.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.IntArrayList.iterator()
+  Details: Covered on lines: [158] (method boundary: 124-180)
+
+37.
+  Caller: com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Covered on lines: [132, 140, 147, 151, 153, 174] (method boundary: 124-180)
+
+38.
+  Caller: com.graphhopper.routing.util.AreaIndex.IndexedCustomArea.intersects(org.locationtech.jts.geom.Point)
+  Target: org.locationtech.jts.geom.prep.PreparedGeometry.intersects(org.locationtech.jts.geom.Geometry)
+  Details: Covered on lines: [72] (method boundary: 72+)
+
+39.
+  Caller: com.graphhopper.routing.util.EncodingManager.lambda.fromProperties(java.util.LinkedHashMap, java.lang.String, com.fasterxml.jackson.databind.JsonNode)
+  Target: com.fasterxml.jackson.databind.JsonNode.textValue()
+  Details: Covered on lines: [72] (method boundary: 59-91)
+
+40.
+  Caller: com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.lambda.handleWayTags(java.lang.String, java.util.Map, java.util.Map)
+  Target: de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.Result.getTags()
+  Details: Covered on lines: [43, 53, 54, 61, 62] (method boundary: 34-77)
+
+41.
+  Caller: com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.lambda.handleWayTags(java.lang.String, java.util.Map, java.util.Map)
+  Target: de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.getSpeedLimits(java.lang.String, java.util.Map, java.util.List, kotlin.jvm.functions.Function2)
+  Details: Covered on lines: [50, 58] (method boundary: 34-77)
+
+42.
+  Caller: com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.lambda.handleWayTags(java.lang.String, kotlin.jvm.functions.Function0)
+  Target: kotlin.jvm.functions.Function0.invoke()
+  Details: Covered on lines: [51, 59] (method boundary: 34-77)
+
+43.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.convertToInternal(com.graphhopper.routing.util.parsers.RestrictionSetter.Restriction)
+  Target: com.carrotsearch.hppc.IntArrayList.from(int[])
+  Details: Covered on lines: [244] (method boundary: 238-253)
+
+44.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.convertToInternal(com.graphhopper.routing.util.parsers.RestrictionSetter.Restriction)
+  Target: com.carrotsearch.hppc.IntArrayList.get(int)
+  Details: Covered on lines: [242, 243] (method boundary: 238-253)
+
+45.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.convertToInternal(com.graphhopper.routing.util.parsers.RestrictionSetter.Restriction)
+  Target: com.carrotsearch.hppc.IntArrayList.remove(int)
+  Details: Covered on lines: [247] (method boundary: 238-253)
+
+46.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.convertToInternal(com.graphhopper.routing.util.parsers.RestrictionSetter.Restriction)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Covered on lines: [239, 241, 247] (method boundary: 238-253)
+
+47.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.findEdgeChain(com.graphhopper.storage.BaseGraph, com.carrotsearch.hppc.IntArrayList, int, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.<init>(com.carrotsearch.hppc.IntContainer)
+  Details: Covered on lines: [272] (method boundary: 271-292)
+
+48.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.findEdgeChain(com.graphhopper.storage.BaseGraph, com.carrotsearch.hppc.IntArrayList, int, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.add(int)
+  Details: Covered on lines: [272, 277, 278, 284, 285] (method boundary: 271-292)
+
+49.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.findEdgeChain(com.graphhopper.storage.BaseGraph, com.carrotsearch.hppc.IntArrayList, int, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.get(int)
+  Details: Covered on lines: [275, 276, 283] (method boundary: 271-292)
+
+50.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.findEdgeChain(com.graphhopper.storage.BaseGraph, com.carrotsearch.hppc.IntArrayList, int, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Covered on lines: [271, 276, 283] (method boundary: 271-292)
+
+51.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.findNodesAndEdgeKeys(com.graphhopper.storage.BaseGraph, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.from(int[])
+  Details: Covered on lines: [255] (method boundary: 254-265)
+
+52.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.lambda.setRestrictions(com.carrotsearch.hppc.IntObjectMap, long, int)
+  Target: com.carrotsearch.hppc.IntObjectMap.get(int)
+  Details: Covered on lines: [70, 71, 76, 80, 86, 100, 117, 125, 126, 133, 134, 136, 141, 148, 149] (method boundary: 63-161)
+
+53.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.lambda.setRestrictions(com.carrotsearch.hppc.IntObjectMap, long, int)
+  Target: com.carrotsearch.hppc.IntSet.forEach(com.carrotsearch.hppc.procedures.IntProcedure)
+  Details: Covered on lines: [87, 108, 118, 135, 152] (method boundary: 63-161)
+
+54.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.lambda.setRestrictions(com.carrotsearch.hppc.IntSet, com.graphhopper.routing.ev.BooleanEncodedValue, com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction, int)
+  Target: com.carrotsearch.hppc.IntSet.forEach(com.carrotsearch.hppc.procedures.IntProcedure)
+  Details: Covered on lines: [87, 108, 118, 135, 152] (method boundary: 63-161)
+
+55.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.lambda.setRestrictions(com.graphhopper.routing.ev.BooleanEncodedValue, int, com.graphhopper.routing.util.parsers.RestrictionSetter.InternalRestriction, int)
+  Target: com.carrotsearch.hppc.IntArrayList.get(int)
+  Details: Covered on lines: [70, 71, 76, 80, 86, 100, 117, 125, 126, 133, 134, 136, 141, 148, 149] (method boundary: 63-161)
+
+56.
+  Caller: com.graphhopper.storage.index.LocationIndexTree.lambda.findClosest(com.carrotsearch.hppc.IntHashSet, com.graphhopper.routing.util.EdgeFilter, double, double, com.graphhopper.storage.index.Snap, int)
+  Target: com.carrotsearch.hppc.IntHashSet.add(int)
+  Details: Covered on lines: [282] (method boundary: 274-312)
+
+57.
+  Caller: com.graphhopper.util.GHUtility.lambda.createCircle(com.graphhopper.util.shapes.GHPoint)
+  Target: org.locationtech.jts.geom.Coordinate.<init>(double, double)
+  Details: Covered on lines: [553] (method boundary: 549-561)
+
+================================================================================
+NOT COVERED Call Sites
+================================================================================
+Count: 4
+
+1.
+  Caller: com.graphhopper.isochrone.algorithm.JTSTriangulator.lambda.triangulate(java.util.function.ToDoubleFunction, com.graphhopper.storage.NodeAccess, java.util.Collection, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree.IsoLabel)
+  Target: org.locationtech.jts.geom.Coordinate.<init>(double, double)
+  Details: Method triangulate has no covered lines (lines 49-end)
+
+2.
+  Caller: com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleWay(com.graphhopper.reader.ReaderWay)
+  Target: com.carrotsearch.hppc.LongArrayList.iterator()
+  Details: No calls to iterator found in HTML
+
+3.
+  Caller: com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)
+  Target: com.carrotsearch.hppc.IntArrayList.iterator()
+  Details: No calls to iterator found in HTML
+
+4.
+  Caller: com.graphhopper.routing.util.parsers.RestrictionSetter.edgesToLocationString(com.graphhopper.storage.BaseGraph, com.carrotsearch.hppc.IntArrayList)
+  Target: com.carrotsearch.hppc.IntArrayList.size()
+  Details: Method edgesToLocationString has no covered lines (lines 266-270)
+
+================================================================================
+SUMMARY
+================================================================================
+Total Potentially Unreachable: 61
+Actually Covered (False Positives): 57
+Not Covered : 4
+Errors: 0
