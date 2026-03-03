@@ -1,0 +1,164 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-parity-61b6e715c2616c868fab071f971aac0ecf9d9856",
+      "title": "Allocation of Resources Without Limits or Throttling in com.fasterxml.jackson.core:jackson-core",
+      "description": "Affected versions of com.fasterxml.jackson.core:jackson-core and tools.jackson.core:jackson-core are vulnerable to Allocation of Resources Without Limits or Throttling.",
+      "ecosystem": "maven",
+      "severity": "HIGH",
+      "references": {
+        "cweIds": [
+          "CWE-770: Allocation of Resources Without Limits or Throttling"
+        ],
+        "owaspIds": [
+          "A06:2021 - Vulnerable and Outdated Components"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-72hv-8253-57qq"
+        ],
+        "cveIds": []
+      },
+      "announcedAt": "2026-02-28T02:01:05Z",
+      "ruleText": {
+        "id": "ssc-parity-61b6e715c2616c868fab071f971aac0ecf9d9856",
+        "message": "Affected versions of com.fasterxml.jackson.core:jackson-core and tools.jackson.core:jackson-core are vulnerable to Allocation of Resources Without Limits or Throttling.",
+        "severity": "ERROR",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "",
+          "cwe": [
+            "CWE-770: Allocation of Resources Without Limits or Throttling"
+          ],
+          "ghsa": "GHSA-72hv-8253-57qq",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2026-02-28T02:01:05Z",
+          "references": [
+            "https://github.com/advisories/GHSA-72hv-8253-57qq"
+          ],
+          "sca-fix-versions": [
+            {
+              "com.fasterxml.jackson.core:jackson-core": "3.1.0"
+            },
+            {
+              "com.fasterxml.jackson.core:jackson-core": "2.21.1"
+            },
+            {
+              "com.fasterxml.jackson.core:jackson-core": "2.18.6"
+            },
+            {
+              "tools.jackson.core:jackson-core": "3.1.0"
+            },
+            {
+              "tools.jackson.core:jackson-core": "2.21.1"
+            },
+            {
+              "tools.jackson.core:jackson-core": "2.18.6"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "GHSA-72hv-8253-57qq",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 280052,
+              "rv_id": 1274638,
+              "rule_id": "EwUpNlx",
+              "version_id": "X0Tz3kO",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-61b6e715c2616c868fab071f971aac0ecf9d9856",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "version": ">=2.0.0, <=2.18.5"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "version": ">=2.19.0, <2.21.1"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "version": ">=3.0.0, <3.1.0"
+            },
+            {
+              "namespace": "maven",
+              "package": "tools.jackson.core:jackson-core",
+              "version": ">=2.0.0, <=2.18.5"
+            },
+            {
+              "namespace": "maven",
+              "package": "tools.jackson.core:jackson-core",
+              "version": ">=2.19.0, <2.21.1"
+            },
+            {
+              "namespace": "maven",
+              "package": "tools.jackson.core:jackson-core",
+              "version": ">=3.0.0, <3.1.0"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ]
+      },
+      "reachability": "VERSION_SPECIFIER",
+      "vulnerableDependencies": [
+        {
+          "name": "com.fasterxml.jackson.core:jackson-core",
+          "versionSpecifier": ">=2.0.0, <=2.18.5"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "com.fasterxml.jackson.core:jackson-core",
+          "versionSpecifier": "3.1.0"
+        },
+        {
+          "name": "com.fasterxml.jackson.core:jackson-core",
+          "versionSpecifier": "2.21.1"
+        },
+        {
+          "name": "com.fasterxml.jackson.core:jackson-core",
+          "versionSpecifier": "2.18.6"
+        },
+        {
+          "name": "tools.jackson.core:jackson-core",
+          "versionSpecifier": "3.1.0"
+        },
+        {
+          "name": "tools.jackson.core:jackson-core",
+          "versionSpecifier": "2.21.1"
+        },
+        {
+          "name": "tools.jackson.core:jackson-core",
+          "versionSpecifier": "2.18.6"
+        }
+      ],
+      "ghsa": "GHSA-72hv-8253-57qq",
+      "reachableIf": "",
+      "cve": ""
+    }
+  ],
+  "totalCount": "1"
+}
