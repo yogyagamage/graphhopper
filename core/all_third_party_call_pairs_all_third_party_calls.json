@@ -1,0 +1,2475 @@
+{
+  "callPairs" : [ {
+    "caller" : "com.graphhopper.GraphHopper.buildSubnetworkRemovalJobs()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.checkProfilesConsistency()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.checkProfilesConsistency()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getEncodingManager()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.clean()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getGraphHopperLocation()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.cleanUp()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getProfilesString()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.cleanUp()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.buildSubnetworkRemovalJobs()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createCHConfigs(java.util.List)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createElevationProvider(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getString(java.lang.String, java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createElevationProvider(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.has(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createElevationProvider(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getBool(java.lang.String, boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createLMConfigs(java.util.List)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap, boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createLocationIndex(com.graphhopper.storage.Directory)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureWriteAccess()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createRouter()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeightingFactory()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createRouter()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.doCreateRouter(com.graphhopper.storage.BaseGraph, com.graphhopper.routing.util.EncodingManager, com.graphhopper.storage.index.LocationIndex, java.util.Map, com.graphhopper.util.details.PathDetailsBuilderFactory, com.graphhopper.util.TranslationMap, com.graphhopper.routing.RouterConfig, com.graphhopper.routing.WeightingFactory, java.util.Map, java.util.Map)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap, boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createWeighting(com.graphhopper.config.Profile, com.graphhopper.util.PMap, boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createWeightingFactory()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.createWeightingFactory()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getEncodingManager()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.flush()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getBaseGraphString()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.flush()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setFullyLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.getBaseGraphString()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getVersionsString()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importAndClose()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.close()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importAndClose()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.load()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importAndClose()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.process(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importAndClose()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.printInfo()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper._getOSMFile()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getOSMFile()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getBaseGraphString()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.readCustomAreas()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.calculateUrbanDensity()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.writeEncodingManagerToProperties()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOSM()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createBaseGraphAndProperties()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOrLoad()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.process(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOrLoad()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.printInfo()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.importOrLoad()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.load()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setElevationProvider(com.graphhopper.reader.dem.ElevationProvider)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.has(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getBool(java.lang.String, boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getString(java.lang.String, java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getInt(java.lang.String, int)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.resolveCustomModelFiles(java.lang.String, java.util.List, com.graphhopper.util.JsonFeatureCollection)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setProfiles(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getDouble(java.lang.String, double)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.asPMap()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.resolveCustomAreas(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getProfiles()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createElevationProvider(com.graphhopper.GraphHopperConfig)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getLong(java.lang.String, long)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.initLocationIndex()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createLocationIndex(com.graphhopper.storage.Directory)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.load()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.hasElevation()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.load()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setFullyLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.load()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.isAllowWrites()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.load()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.checkProfilesConsistency()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.load()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.postProcessing(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.load()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getProfilesString()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareCH(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getCHProfileVersion(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareCH(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setCHProfileVersion(java.lang.String, int)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareCH(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createCHConfigs(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareCH(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.prepareCH(boolean, java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareLM(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createLMConfigs(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareLM(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getLMProfileVersion(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareLM(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.prepareLM(boolean, java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.loadOrPrepareLM(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setLMProfileVersion(java.lang.String, int)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postImport()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getBaseGraph()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postImport()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.interpolateBridgesTunnelsAndFerries()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postImport()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.hasElevation()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postProcessing(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.initLocationIndex()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postProcessing(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.loadOrPrepareCH(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postProcessing(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.importPublicTransit()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.postProcessing(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.loadOrPrepareLM(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.prepareCH(boolean, java.util.List)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureWriteAccess()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.prepareLM(boolean, java.util.List)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureWriteAccess()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.printInfo()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getBaseGraphString()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.checkProfilesConsistency()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.postImport()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.flush()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.buildOSMParsers(java.util.Map, java.util.List, java.util.List, java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getVehiclesByName(java.lang.String, java.util.Collection)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.cleanUp()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.importOSM()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.postProcessing(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getEncodingManager()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.buildEncodingManager(java.util.Map, java.util.List, boolean, boolean, java.util.Collection)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.hasElevation()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.getEncodedValueStrings(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.process(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureWriteAccess()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.readCustomAreas()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.io.Reader, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.readCustomAreas()",
+    "thirdPartyMethod" : "com.bedatadriven.jackson.datatype.jts.JtsModule.<init>()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.readCustomAreas()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.readCustomAreas()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomAreas(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomAreas(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomAreas(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.io.Reader, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomAreas(java.lang.String)",
+    "thirdPartyMethod" : "com.bedatadriven.jackson.datatype.jts.JtsModule.<init>()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomModelFiles(java.lang.String, java.util.List, com.graphhopper.util.JsonFeatureCollection)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(byte[], java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomModelFiles(java.lang.String, java.util.List, com.graphhopper.util.JsonFeatureCollection)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsBytes(java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.resolveCustomModelFiles(java.lang.String, java.util.List, com.graphhopper.util.JsonFeatureCollection)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.lang.String, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.route(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.createRouter()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setBaseGraph(com.graphhopper.storage.BaseGraph)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setFullyLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setElevationProvider(com.graphhopper.reader.dem.ElevationProvider)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setElevation(boolean)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setGraphHopperLocation(java.lang.String)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setMinNetworkSize(int)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setOSMFile(java.lang.String)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setPreciseIndexResolution(int)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setProfiles(com.graphhopper.config.Profile[])",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.setProfiles(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setSortGraph(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setStoreOnFlush(boolean)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopper.setUrbanDensityCalculation(double, double, double, double, int)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopper.ensureNotLoaded()"
+  }, {
+    "caller" : "com.graphhopper.GraphHopperConfig.<init>()",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.<init>(com.graphhopper.util.PMap)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntHashSet.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntHashSet.<init>(com.carrotsearch.hppc.IntContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntHashSet.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntHashSet.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntLongHashMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntLongHashMap.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntLongHashMap.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntObjectHashMap.<clinit>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.HashOrderMixing.constant(long)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntObjectHashMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntObjectHashMap.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntObjectHashMap.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHIntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongHashSet.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongHashSet.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongHashSet.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongHashSet.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongLongHashMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongLongHashMap.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongLongHashMap.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongLongHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongObjectHashMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongObjectHashMap.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongObjectHashMap.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHLongObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHObjectIntHashMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.ObjectIntHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHObjectIntHashMap.<init>(com.carrotsearch.hppc.ObjectIntAssociativeContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.ObjectIntAssociativeContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.coll.GHObjectIntHashMap.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.ObjectIntHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHObjectIntHashMap.<init>(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.ObjectIntHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.coll.GHObjectIntHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.ObjectIntHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.<init>(com.graphhopper.isochrone.algorithm.ReadableTriangulation)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.PrecisionModel.<init>(double)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.<init>(com.graphhopper.isochrone.algorithm.ReadableTriangulation)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>(org.locationtech.jts.geom.PrecisionModel)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.computeIsoline(java.util.function.ToIntBiFunction, java.util.Collection)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.computeIsoline(java.util.function.ToIntBiFunction, java.util.Collection)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.Vertex.getCoordinate()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.computeIsoline(java.util.function.ToIntBiFunction, java.util.Collection)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createLinearRing(org.locationtech.jts.geom.Coordinate[])"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.computeIsoline(java.util.function.ToIntBiFunction, java.util.Collection)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.Vertex.midPoint(org.locationtech.jts.triangulate.quadedge.Vertex)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.computeIsoline(java.util.function.ToIntBiFunction, java.util.Collection)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createMultiPolygon(org.locationtech.jts.geom.Polygon[])"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.isFrameVertex(org.locationtech.jts.triangulate.quadedge.Vertex)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.Vertex.getZ()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.lambda.computeIsoline(double, org.locationtech.jts.triangulate.quadedge.Vertex, org.locationtech.jts.triangulate.quadedge.Vertex)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.Vertex.getZ()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.lambda.punchHoles(org.locationtech.jts.geom.prep.PreparedPolygon, org.locationtech.jts.geom.prep.PreparedPolygon)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getNumPoints()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.lambda.punchHoles(org.locationtech.jts.geom.prep.PreparedPolygon, org.locationtech.jts.geom.prep.PreparedPolygon)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.getGeometry()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.moveEpsilonTowards(org.locationtech.jts.geom.Coordinate, org.locationtech.jts.geom.Coordinate)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.LinearRing, org.locationtech.jts.geom.LinearRing[])"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.LinearRing.getCoordinateSequence()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.algorithm.CGAlgorithms.signedArea(org.locationtech.jts.geom.CoordinateSequence)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.setUserData(java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.LinearRing)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getExteriorRing()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getUserData()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.<init>(org.locationtech.jts.geom.Polygonal)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.contains(org.locationtech.jts.geom.Geometry)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ContourBuilder.punchHoles(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.getGeometry()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.lambda.triangulate(java.util.function.ToDoubleFunction, com.graphhopper.storage.NodeAccess, java.util.Collection, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree.IsoLabel)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.ConformingDelaunayTriangulator.getSubdivision()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.ConformingDelaunayTriangulator.<init>(java.util.Collection, double)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.ConformingDelaunayTriangulator.setConstraints(java.util.List, java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.ConformingDelaunayTriangulator.getConvexHull()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.getVertices(boolean)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.ConformingDelaunayTriangulator.formInitialDelaunay()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.isFrameVertex(org.locationtech.jts.triangulate.quadedge.Vertex)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.Vertex.setZ(double)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.JTSTriangulator.triangulate(com.graphhopper.storage.index.Snap, com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.isochrone.algorithm.ShortestPathTree, java.util.function.ToDoubleFunction, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.ConformingDelaunayTriangulator.enforceConstraints()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.dNext()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.dNext()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.dPrev()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.dPrev()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.dest()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.dest()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.getPrimary()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.getPrimary()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.lNext()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.lNext()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.oNext()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.oNext()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.oPrev()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.oPrev()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.orig()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.orig()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeAsReadableQuadEdge.sym()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.sym()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.QuadEdgeSubdivisionAsReadableTriangulation.getEdges()",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdgeSubdivision.getEdges()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ShortestPathTree.getIsochroneEdges(double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.values()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ShortestPathTree.getIsochroneEdges(double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.ObjectCollection.iterator()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ShortestPathTree.search(int, java.util.function.Consumer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.ShortestPathTree.search(int, java.util.function.Consumer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.assertTriangle(org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.lNext()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.assertTriangle(org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.util.Assert.equals(java.lang.Object, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.getEdge(int, int)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.sym()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.getVertex(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.makeTriangle(int, int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.sym()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.makeTriangle(int, int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.splice(org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.makeTriangle(int, int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.connect(org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.makeTriangle(int, int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.makeEdge(org.locationtech.jts.triangulate.quadedge.Vertex, org.locationtech.jts.triangulate.quadedge.Vertex)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.makeTriangle(int, int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.lNext()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.putEdge(int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "org.locationtech.jts.triangulate.quadedge.QuadEdge.sym()"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.Triangulation.putEdge(int, int, org.locationtech.jts.triangulate.quadedge.QuadEdge)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.isochrone.algorithm.TriangulationAsReadableTriangulation.getVertexQuadEdge(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.ReaderWay.<init>(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.ReaderWay.toString()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.CGIARProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.<init>(org.apache.xmlgraphics.image.codec.util.SeekableStream, org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.CGIARProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.util.SeekableStream.wrapInputStream(java.io.InputStream, boolean)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.CGIARProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.decodeAsRaster()"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.CGIARProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.EdgeElevationInterpolator.checkAdjacent(com.graphhopper.util.EdgeIteratorState)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.EdgeElevationInterpolator.checkAdjacent(com.graphhopper.util.EdgeIteratorState)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.EdgeElevationInterpolator.interpolateEdge(com.graphhopper.util.EdgeIteratorState, com.graphhopper.coll.GHBitSet, com.graphhopper.util.EdgeExplorer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.toArray()"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.EdgeElevationSmoothingMovingAverage.smooth(com.graphhopper.util.PointList, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntDoubleHashMap.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.EdgeElevationSmoothingMovingAverage.smooth(com.graphhopper.util.PointList, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntDoubleHashMap.put(int, double)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.EdgeElevationSmoothingMovingAverage.smooth(com.graphhopper.util.PointList, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntDoubleHashMap.forEach(java.util.function.Consumer)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.GMTEDProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.util.SeekableStream.wrapInputStream(java.io.InputStream, boolean)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.GMTEDProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.<init>(org.apache.xmlgraphics.image.codec.util.SeekableStream, org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam)"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.GMTEDProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.tiff.TIFFDecodeParam.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.dem.GMTEDProvider.readFile(java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.xmlgraphics.image.codec.tiff.TIFFImageDecoder.decodeAsRaster()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.GraphRestriction.<init>(boolean, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.GraphRestriction.<init>(boolean, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.GraphRestriction.node(com.carrotsearch.hppc.IntArrayList, int, com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.from(int[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.GraphRestriction.node(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.from(int[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.GraphRestriction.way(int, com.carrotsearch.hppc.IntArrayList, int, com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.from(int[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.GraphRestriction.way(int, int, int, com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.from(int[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMNodeData.<init>(com.graphhopper.util.PointAccess, com.graphhopper.storage.Directory)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongScatterSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMNodeData.isSplitNode(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.contains(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMNodeData.release()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.clear()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMNodeData.setSplitNode(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.add(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMNodeData.unsetSplitNode(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.removeAll(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMReader.acceptWay(com.graphhopper.reader.ReaderWay)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMReader.addRestrictionsToGraph()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMReader.addRestrictionsToGraph()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMReader.addRestrictionsToGraph()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.add(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMReader.calcDistance(com.graphhopper.reader.ReaderWay, com.graphhopper.reader.osm.WaySegmentParser.CoordinateSupplier)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMReader.calcDistance(com.graphhopper.reader.ReaderWay, com.graphhopper.reader.osm.WaySegmentParser.CoordinateSupplier)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.OSMXMLHelper.readNodes(com.graphhopper.reader.ReaderWay, javax.xml.stream.XMLStreamReader)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.add(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.checkIfCompatibleWithRestriction(com.graphhopper.reader.osm.GraphRestriction, java.lang.String)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.checkTags(com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList, java.util.Map)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.extractMembers(com.graphhopper.reader.ReaderRelation)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.extractMembers(com.graphhopper.reader.ReaderRelation)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.extractMembers(com.graphhopper.reader.ReaderRelation)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.add(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.extractMembers(com.graphhopper.reader.ReaderRelation)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionConverter.membersExist(com.graphhopper.reader.osm.RestrictionMembers, java.util.function.LongFunction, com.graphhopper.reader.ReaderRelation)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionMembers.getAllWays()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.addAll(com.carrotsearch.hppc.LongContainer)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionMembers.getAllWays()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.RestrictionMembers.getAllWays()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WaySegmentParser.Pass1Handler.handleWay(com.graphhopper.reader.ReaderWay)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WaySegmentParser.Pass1Handler.handleWay(com.graphhopper.reader.ReaderWay)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleWay(com.graphhopper.reader.ReaderWay)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WaySegmentParser.Pass2Handler.handleWay(com.graphhopper.reader.ReaderWay)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult.<init>(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.NodeResult.<init>(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.buildResult(java.util.List, com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.buildResult(java.util.List, com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.buildResult(java.util.List, com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.buildResult(java.util.List, com.graphhopper.reader.osm.WayToEdgeConverter.EdgeResult)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode(com.carrotsearch.hppc.LongArrayList, int, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode(com.carrotsearch.hppc.LongArrayList, int, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode(com.carrotsearch.hppc.LongArrayList, int, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaNode(com.carrotsearch.hppc.LongArrayList, int, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays(com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays(com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.convertForViaWays(com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList, com.carrotsearch.hppc.LongArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int, int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(com.carrotsearch.hppc.IntContainer)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.explore(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, int, int, com.carrotsearch.hppc.IntArrayList, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.findEdgeChain(long, com.carrotsearch.hppc.LongArrayList, long, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.findEdgeChain(long, com.carrotsearch.hppc.LongArrayList, long, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.findEdgeChain(long, com.carrotsearch.hppc.LongArrayList, long, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.findEdgeChain(long, com.carrotsearch.hppc.LongArrayList, long, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.lambda.convertForViaNode(int, com.graphhopper.reader.osm.WayToEdgeConverter.NodeResult, com.carrotsearch.hppc.cursors.IntCursor)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.lambda.findEdgeChain(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.IntArrayList, java.util.List, com.carrotsearch.hppc.cursors.IntCursor)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.from(int[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.lambda.listFromIterator(com.carrotsearch.hppc.IntArrayList, com.carrotsearch.hppc.cursors.IntCursor)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgeConverter.listFromIterator(java.util.Iterator)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntScatterMap.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.getEdges(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.getEdges(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntMap.indexGet(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.getEdges(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.getEdges(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntMap.indexOf(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.getEdges(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.cursors.IntCursor.<init>()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.next()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved(long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved(long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntMap.indexGet(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved(long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntMap.indexOf(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved(long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.putIfReserved(long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntMap.indexReplace(int, int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.WayToEdgesMap.reserve(long)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIntMap.put(long, int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Node.getLon()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Node.getKeysList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Node.getLat()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Node.getValsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Node.getId()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes.getLonList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes.getIdList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes.getKeysValsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processNodes(org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.DenseNodes.getLatList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmHeader(byte[])",
+    "thirdPartyMethod" : "com.google.protobuf.ProtocolStringList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmHeader(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.HeaderBlock.getOsmosisReplicationTimestamp()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmHeader(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.HeaderBlock.getRequiredFeaturesList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmHeader(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.HeaderBlock.parseFrom(byte[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmPrimitives(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveGroup.getRelationsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmPrimitives(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.getPrimitivegroupList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmPrimitives(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveGroup.getNodesList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmPrimitives(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveGroup.getDense()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmPrimitives(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveGroup.getWaysList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processOsmPrimitives(byte[])",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.parseFrom(byte[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processRelations(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Relation.getRolesSidList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processRelations(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Relation.getId()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processRelations(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Relation.getKeysList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processRelations(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Relation.getTypesList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processRelations(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Relation.getMemidsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processRelations(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Relation.getValsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processWays(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Way.getRefsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processWays(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Way.getId()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processWays(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Way.getValsList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processWays(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongIndexedContainer.add(long)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.processWays(java.util.List, com.graphhopper.reader.osm.pbf.PbfFieldDecoder)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.Way.getKeysList()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.getZlibData()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.hasRaw()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.hasZlibData()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "com.google.protobuf.ByteString.toByteArray()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.parseFrom(byte[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.getRawSize()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfBlobDecoder.readBlobContent()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.Blob.getRaw()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.getGranularity()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.getStringtable()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.getLatOffset()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.StringTable.getSCount()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.StringTable.getS(int)"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.getDateGranularity()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "com.google.protobuf.ByteString.toStringUtf8()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfFieldDecoder.<init>(org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Osmformat.PrimitiveBlock.getLonOffset()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfStreamSplitter.getNextBlob()",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.BlobHeader.getType()"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfStreamSplitter.readHeader(int)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.BlobHeader.parseFrom(byte[])"
+  }, {
+    "caller" : "com.graphhopper.reader.osm.pbf.PbfStreamSplitter.readRawBlob(org.openstreetmap.osmosis.osmbinary.Fileformat.BlobHeader)",
+    "thirdPartyMethod" : "org.openstreetmap.osmosis.osmbinary.Fileformat.BlobHeader.getDatasize()"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractBidirAlgo.initFrom(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractBidirAlgo.initTo(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractBidirAlgo.updateBestPath(double, com.graphhopper.routing.SPTEntry, int, int, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractBidirCHAlgo.fillEdges(com.graphhopper.routing.SPTEntry, java.util.PriorityQueue, com.carrotsearch.hppc.IntObjectMap, com.graphhopper.storage.RoutingCHEdgeExplorer, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractBidirCHAlgo.fillEdges(com.graphhopper.routing.SPTEntry, java.util.PriorityQueue, com.carrotsearch.hppc.IntObjectMap, com.graphhopper.storage.RoutingCHEdgeExplorer, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractBidirectionEdgeCHNoSOD.updateBestPath(double, com.graphhopper.routing.SPTEntry, int, int, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractNonCHBidirAlgo.fillEdges(com.graphhopper.routing.SPTEntry, java.util.PriorityQueue, com.carrotsearch.hppc.IntObjectMap, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.AbstractNonCHBidirAlgo.fillEdges(com.graphhopper.routing.SPTEntry, java.util.PriorityQueue, com.carrotsearch.hppc.IntObjectMap, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRoute.addToMap(com.graphhopper.coll.GHIntObjectHashMap, com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRoute.apply(int, com.carrotsearch.hppc.IntSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRoute.apply(int, com.graphhopper.routing.SPTEntry)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRoute.calcAlternatives(com.graphhopper.routing.Path, int, double, double, double, double, double, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.predicates.IntObjectPredicate)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.calcAlternatives(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.predicates.IntObjectPredicate)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.calcAlternatives(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.concat(com.graphhopper.storage.Graph, com.graphhopper.routing.Path, com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.concat(com.graphhopper.storage.Graph, com.graphhopper.routing.Path, com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.addAll(com.carrotsearch.hppc.IntContainer)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.lambda.calcAlternatives(com.graphhopper.routing.Path, java.util.ArrayList, int, com.graphhopper.routing.SPTEntry)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.nodesInCurrentAlternativeSetContains(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.sharedDistanceWithShortest(com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.tTest(com.graphhopper.routing.Path, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteCH.tTest(com.graphhopper.routing.Path, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.calcAlternatives(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.predicates.IntObjectPredicate)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.calcAlternatives(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.concat(com.graphhopper.storage.Graph, com.graphhopper.routing.Path, com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.addAll(com.carrotsearch.hppc.IntContainer)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.concat(com.graphhopper.storage.Graph, com.graphhopper.routing.Path, com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.concat(com.graphhopper.storage.Graph, com.graphhopper.routing.Path, com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.nodesInCurrentAlternativeSetContains(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.sharedDistanceWithShortest(com.graphhopper.routing.Path)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.tTest(com.graphhopper.routing.Path, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.AlternativeRouteEdgeCH.tTest(com.graphhopper.routing.Path, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.CHPathCalculator.calcPaths(int, int, com.graphhopper.routing.EdgeRestrictions)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.Dijkstra.calcPath(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.Dijkstra.runAlgo()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.Dijkstra.runAlgo()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.DijkstraBidirectionCH.entryIsStallable(com.graphhopper.routing.SPTEntry, com.carrotsearch.hppc.IntObjectMap, com.graphhopper.storage.RoutingCHEdgeExplorer, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.DijkstraOneToMany.IntArrayListWithCap.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.EdgeRestrictions.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.from(int[])"
+  }, {
+    "caller" : "com.graphhopper.routing.FlexiblePathCalculator.calcPaths(int, int, com.graphhopper.routing.EdgeRestrictions, com.graphhopper.routing.RoutingAlgorithm)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.HeadingResolver.getEdgesWithDifferentHeading(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.HeadingResolver.getEdgesWithDifferentHeading(int, double)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.<init>(com.graphhopper.storage.Graph)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.addEdge(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcEdges()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcEdges()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcNodes()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcNodes()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcNodes()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcNodes()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcPoints()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.calcPoints()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.forEveryEdge(com.graphhopper.routing.Path.EdgeVisitor)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.forEveryEdge(com.graphhopper.routing.Path.EdgeVisitor)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.getEdgeCount()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.getFinalEdge()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.getFinalEdge()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.next(com.graphhopper.util.EdgeIteratorState, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Path.toString()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.RoundTripRouting.RoundTripCalculator.<init>(com.graphhopper.routing.FlexiblePathCalculator)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.RoundTripRouting.RoundTripCalculator.calcPath(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.RoundTripRouting.RoundTripCalculator.calcPath(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.CHSolver.checkRequest()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getAlgorithm()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.CHSolver.checkRequest()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCustomModel()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.CHSolver.checkRequest()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHeadings()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.CHSolver.checkRequest()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.CHSolver.createPathCalculator(com.graphhopper.routing.querygraph.QueryGraph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getAlgorithm()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.CHSolver.createPathCalculator(com.graphhopper.routing.querygraph.QueryGraph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.FlexSolver.checkRequest()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.FlexSolver.createWeighting()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.FlexSolver.createWeighting()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCustomModel()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.FlexSolver.getAlgoOpts()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getAlgorithm()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.FlexSolver.getAlgoOpts()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.LMSolver.createPathCalculator(com.graphhopper.routing.querygraph.QueryGraph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.LMSolver.createPathCalculator(com.graphhopper.routing.querygraph.QueryGraph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCustomModel()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.checkMaxVisitedNodes()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.checkProfileCompatibility()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.checkProfileCompatibility()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getProfile()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.checkProfileCompatibility()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCustomModel()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.checkProfileCompatibility()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCurbsides()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.checkProfileSpecified()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getProfile()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.Solver.getProfile()",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getProfile()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkAtLeastOnePoint(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkCurbsides(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCurbsides()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkCurbsides(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkHeadings(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHeadings()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkHeadings(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkHeadings(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.isAzimuthValue(double)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkNoBlockArea(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkNoLegacyParameters(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkPointHints(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPointHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.checkPointHints(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.concatenatePaths(com.graphhopper.GHRequest, com.graphhopper.routing.weighting.Weighting, com.graphhopper.routing.querygraph.QueryGraph, java.util.List, com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getLocale()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.createPathMerger(com.graphhopper.GHRequest, com.graphhopper.routing.weighting.Weighting, com.graphhopper.storage.Graph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.createPathMerger(com.graphhopper.GHRequest, com.graphhopper.routing.weighting.Weighting, com.graphhopper.storage.Graph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPathDetails()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.createPathMerger(com.graphhopper.GHRequest, com.graphhopper.routing.weighting.Weighting, com.graphhopper.storage.Graph)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHeadings()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.createSolver(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.route(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getAlgorithm()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.route(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.route(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.route(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.route(com.graphhopper.GHRequest)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.addError(java.lang.Throwable)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getLocale()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCurbsides()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHeadings()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.add(com.graphhopper.ResponsePath)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPointHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.addDebugInfo(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getSnapPreventions()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeAlt(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.addDebugInfo(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.add(com.graphhopper.ResponsePath)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHeadings()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeRoundTrip(com.graphhopper.GHRequest, com.graphhopper.routing.Router.FlexSolver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHeadings()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.add(com.graphhopper.ResponsePath)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.addDebugInfo(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getPointHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getCurbsides()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.addDebugInfo(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getSnapPreventions()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHRequest.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.Router.routeVia(com.graphhopper.GHRequest, com.graphhopper.routing.Router.Solver)",
+    "thirdPartyMethod" : "com.graphhopper.GHResponse.getHints()"
+  }, {
+    "caller" : "com.graphhopper.routing.ViaRouting.buildEdgeRestrictions(com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.storage.index.Snap, com.graphhopper.storage.index.Snap, double, double, int, boolean, java.lang.String, java.lang.String, com.graphhopper.routing.util.DirectedEdgeFilter)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ViaRouting.buildEdgeRestrictions(com.graphhopper.routing.querygraph.QueryGraph, com.graphhopper.storage.index.Snap, com.graphhopper.storage.index.Snap, double, double, int, boolean, java.lang.String, java.lang.String, com.graphhopper.routing.util.DirectedEdgeFilter)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.addAll(com.carrotsearch.hppc.IntContainer)"
+  }, {
+    "caller" : "com.graphhopper.routing.ViaRouting.lookup(com.graphhopper.routing.ev.EncodedValueLookup, java.util.List, com.graphhopper.routing.util.EdgeFilter, com.graphhopper.storage.index.LocationIndex, java.util.List, java.util.List, com.graphhopper.routing.util.DirectedEdgeFilter, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ViaRouting.lookup(com.graphhopper.routing.ev.EncodedValueLookup, java.util.List, com.graphhopper.routing.util.EdgeFilter, com.graphhopper.storage.index.LocationIndex, java.util.List, java.util.List, com.graphhopper.routing.util.DirectedEdgeFilter, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.ViaRouting.lookup(com.graphhopper.routing.ev.EncodedValueLookup, java.util.List, com.graphhopper.routing.util.EdgeFilter, com.graphhopper.storage.index.LocationIndex, java.util.List, java.util.List, com.graphhopper.routing.util.DirectedEdgeFilter, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.BridgePathFinder.<init>(com.graphhopper.routing.ch.CHPreparationGraph)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectScatterMap.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.BridgePathFinder.find(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.HashOrderMixing.constant(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.BridgePathFinder.find(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.BridgePathFinder.find(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.clear()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.BridgePathFinder.find(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int, double, com.carrotsearch.hppc.HashOrderMixingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.BridgePathFinder.find(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.<init>(int, int, boolean, com.graphhopper.routing.ch.CHPreparationGraph.TurnCostFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntScatterSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.<init>(int, int, boolean, com.graphhopper.routing.ch.CHPreparationGraph.TurnCostFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.getAdjNode()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.getOrigEdgeKeyFirst()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.hasAccess()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigEdgeIteratorImpl.setBaseNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.<init>()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.addEdge(int, int, int, boolean, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.build()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.sorting.IndirectComparator.AscendingIntComparator.<init>(int[])"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.build()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.sorting.IndirectSort.mergesort(int, int, com.carrotsearch.hppc.sorting.IndirectComparator)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.buildFirstEdgesByNode()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.buildFirstEdgesByNode()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.OrigGraph.Builder.buildFirstEdgesByNode()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.disconnect(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.disconnect(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.clear()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.getShortcutForPrepareEdge(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.setShortcutForPrepareEdge(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.resize(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.setShortcutForPrepareEdge(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationGraph.setShortcutForPrepareEdge(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.asPMap()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getCHProfiles()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.has(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.CHPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getInt(java.lang.String, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.<init>(com.graphhopper.routing.ch.CHPreparationGraph, com.graphhopper.storage.CHStorageBuilder, com.graphhopper.util.PMap)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.<init>(com.graphhopper.routing.ch.CHPreparationGraph, com.graphhopper.storage.CHStorageBuilder, com.graphhopper.util.PMap)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.close()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.release()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.close()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.release()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.contractNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.findAndHandlePrepareShortcuts(int, com.graphhopper.routing.ch.EdgeBasedNodeContractor.PrepareShortcutHandler, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.add(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.findAndHandlePrepareShortcuts(int, com.graphhopper.routing.ch.EdgeBasedNodeContractor.PrepareShortcutHandler, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongSet.clear()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.findAndHandlePrepareShortcuts(int, com.graphhopper.routing.ch.EdgeBasedNodeContractor.PrepareShortcutHandler, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.findAndHandlePrepareShortcuts(int, com.graphhopper.routing.ch.EdgeBasedNodeContractor.PrepareShortcutHandler, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.clear()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.findAndHandlePrepareShortcuts(int, com.graphhopper.routing.ch.EdgeBasedNodeContractor.PrepareShortcutHandler, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.findAndHandlePrepareShortcuts(int, com.graphhopper.routing.ch.EdgeBasedNodeContractor.PrepareShortcutHandler, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedNodeContractor.updateHierarchyDepthsOfNeighbors(int, com.carrotsearch.hppc.IntContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntContainer.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.close()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.release()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.finishSearch()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.initCollections()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.initSearch(int, int, int, com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.Stats)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.resetShortestPathTree()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.resetShortestPathTree()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.EdgeBasedWitnessPathSearcher.runSearch(int, int, double, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.<init>(com.graphhopper.routing.ch.CHPreparationGraph)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.findUpperBound(int, double, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.init(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.NodeBasedWitnessPathSearcher.reset()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.ch.PrepareContractionHierarchies.contractNodesUsingHeuristicNodeOrdering()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntContainer.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ArrayEdgeIntAccess.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ArrayEdgeIntAccess.getInt(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ArrayEdgeIntAccess.getInt(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ArrayEdgeIntAccess.setInt(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ArrayEdgeIntAccess.setInt(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ArrayEdgeIntAccess.setInt(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.resize(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.<clinit>()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.setPropertyNamingStrategy(com.fasterxml.jackson.databind.PropertyNamingStrategy)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.<clinit>()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.<clinit>()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.setVisibility(com.fasterxml.jackson.annotation.PropertyAccessor, com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.deserializeEncodedValue(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.treeToValue(com.fasterxml.jackson.core.TreeNode, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.deserializeEncodedValue(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonProcessingException.getMessage()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.deserializeEncodedValue(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readTree(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.serializeEncodedValue(com.graphhopper.routing.ev.EncodedValue)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.valueToTree(java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.serializeEncodedValue(com.graphhopper.routing.ev.EncodedValue)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.EncodedValueSerializer.serializeEncodedValue(com.graphhopper.routing.ev.EncodedValue)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.core.JsonProcessingException.getMessage()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ExternalBooleanEncodedValue.<init>(java.lang.String, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ExternalBooleanEncodedValue.getBool(boolean, int, com.graphhopper.routing.ev.EdgeIntAccess)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ExternalBooleanEncodedValue.setBool(boolean, int, com.graphhopper.routing.ev.EdgeIntAccess, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.ev.ExternalBooleanEncodedValue.setBool(boolean, int, com.graphhopper.routing.ev.EdgeIntAccess, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.clear(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getBool(java.lang.String, boolean)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.has(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getLMProfiles()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getInt(java.lang.String, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.init(com.graphhopper.GraphHopperConfig)",
+    "thirdPartyMethod" : "com.graphhopper.GraphHopperConfig.getString(java.lang.String, java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.loadLandmarkSplittingFeatureCollection(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.loadLandmarkSplittingFeatureCollection(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.loadLandmarkSplittingFeatureCollection(java.lang.String)",
+    "thirdPartyMethod" : "com.bedatadriven.jackson.datatype.jts.JtsModule.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LMPreparationHandler.loadLandmarkSplittingFeatureCollection(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.io.Reader, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.getFromCount()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.initLandmarkWeights(int, int, long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.initLandmarkWeights(int, int, long, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.procedures.IntObjectProcedure)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.LandmarkExplorer.setSubnetworks(byte[], int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.predicates.IntObjectPredicate)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.chooseActiveLandmarks(int, int, int[], boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.chooseActiveLandmarks(int, int, int[], boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.addAll(int[])"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.chooseActiveLandmarks(int, int, int[], boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.createLandmarks()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.estimateMaxWeight(java.util.List, com.graphhopper.routing.util.EdgeFilter)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.estimateMaxWeight(java.util.List, com.graphhopper.routing.util.EdgeFilter)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.findBorderEdgeIds(com.graphhopper.routing.util.AreaIndex)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.findBorderEdgeIds(com.graphhopper.routing.util.AreaIndex)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.LandmarkStorage.lambda.createLandmarks(com.graphhopper.routing.ev.BooleanEncodedValue, com.carrotsearch.hppc.IntHashSet, com.graphhopper.util.EdgeIteratorState)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.SplitArea.fromJsonFeature(com.graphhopper.util.JsonFeature)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.util.PolygonExtracter.getPolygons(org.locationtech.jts.geom.Geometry, java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.SplitArea.fromJsonFeature(com.graphhopper.util.JsonFeature)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getGeometryN(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.lm.SplitArea.fromJsonFeature(com.graphhopper.util.JsonFeature)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getNumGeometries()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.<init>(com.carrotsearch.hppc.IntArrayList, java.util.List, int, com.carrotsearch.hppc.IntObjectMap)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.addRemovedEdges(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.addRemovedEdges(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.addVirtualEdges(boolean, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.addVirtualEdges(boolean, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.getClosestEdge(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.EdgeChangeBuilder.getNumVirtualNodes()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryGraph.apply(int, com.graphhopper.routing.querygraph.QueryOverlay.EdgeChanges)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryGraph.apply(int, com.graphhopper.routing.querygraph.QueryOverlay.EdgeChanges)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryGraph.buildVirtualEdgesAtRealNodes(com.graphhopper.util.EdgeExplorer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.procedures.IntObjectProcedure)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryGraph.buildVirtualEdgesAtRealNodes(com.graphhopper.util.EdgeExplorer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryGraph.setBaseNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryGraph.unfavorVirtualEdges(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryOverlay.<init>(int, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryOverlay.EdgeChanges.<init>(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryOverlayBuilder.apply(int, java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.apply(int, com.graphhopper.routing.querygraph.QueryOverlay.EdgeChanges)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.apply(int, com.graphhopper.routing.querygraph.QueryOverlay.EdgeChanges)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.put(int, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.buildVirtualEdgesAtRealNodes(com.graphhopper.storage.RoutingCHEdgeExplorer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.forEach(com.carrotsearch.hppc.procedures.IntObjectProcedure)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.buildVirtualEdgesAtRealNodes(com.graphhopper.storage.RoutingCHEdgeExplorer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectHashMap.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.buildVirtualEdgesAtRealNodes(com.graphhopper.storage.RoutingCHEdgeExplorer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.close()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.clear()"
+  }, {
+    "caller" : "com.graphhopper.routing.querygraph.QueryRoutingCHGraph.setBaseNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntObjectMap.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.<init>(com.graphhopper.storage.Graph, com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.EdgeTransitionFilter, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.<init>(com.graphhopper.storage.Graph, com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.EdgeTransitionFilter, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.ConnectedComponents.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.ConnectedComponents.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.add(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.contains(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanArrayIntSet.remove(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.clear(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntScatterMap.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.get(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntScatterMap.getOrDefault(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.has(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntScatterMap.containsKey(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.minTo(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntScatterMap.put(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.minTo(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntScatterMap.getOrDefault(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntIntMap.set(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntScatterMap.put(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntScatterSet.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.add(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntScatterSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.contains(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntScatterSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.TarjanHashIntSet.remove(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntScatterSet.remove(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.trimToSize()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.getLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.removeLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges(com.carrotsearch.hppc.IntContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.findComponentsForStartEdges(com.carrotsearch.hppc.IntContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntContainer.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.hasNext()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pop()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.removeLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pop()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.removeLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushBuildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushBuildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushFindComponentForEdgeKey(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushFindComponentForEdgeKey(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushHandleNeighbor(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushHandleNeighbor(int, int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushUpdateLowLinks(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.pushUpdateLowLinks(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.EdgeBasedTarjanSCC.setupNextEdgeKey(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.doWork()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.lambda.doWork()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworkEdge(int, com.graphhopper.routing.weighting.Weighting, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworkEdge(int, com.graphhopper.routing.weighting.Weighting, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.cardinality()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.PrepareRoutingSubnetworks.setSubnetworks(com.graphhopper.routing.weighting.Weighting, java.lang.String, com.carrotsearch.hppc.BitSet)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSetIterator.nextSetBit()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.<init>(com.graphhopper.storage.Graph, com.graphhopper.routing.util.EdgeFilter, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.<init>(com.graphhopper.storage.Graph, com.graphhopper.routing.util.EdgeFilter, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.<init>(com.graphhopper.storage.Graph, com.graphhopper.routing.util.EdgeFilter, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.ConnectedComponents.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.ConnectedComponents.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.getLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.trimToSize()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.removeLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.clear(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.buildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.findComponentForNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.findComponents()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.hasNext()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.pop()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.removeLast()"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.pushBuildComponent(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.pushFindComponentForNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.pushHandleNeighbor(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.pushUpdateLowLinks(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.LongArrayDeque.addLast(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.setupNextNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.subnetwork.TarjanSCC.setupNextNode(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.index.strtree.STRtree.build()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getEnvelopeInternal()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.index.strtree.STRtree.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometryFactory.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometryFactory.create(org.locationtech.jts.geom.Geometry)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.<init>(java.util.List)",
+    "thirdPartyMethod" : "org.locationtech.jts.index.strtree.STRtree.insert(org.locationtech.jts.geom.Envelope, java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.IndexedCustomArea.intersects(org.locationtech.jts.geom.Point)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometry.intersects(org.locationtech.jts.geom.Geometry)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.query(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.<init>(double, double, double, double)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.query(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.index.strtree.STRtree.query(org.locationtech.jts.geom.Envelope)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.query(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPoint(org.locationtech.jts.geom.Coordinate)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.AreaIndex.query(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.CustomArea.fromJsonFeature(com.graphhopper.util.JsonFeature)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getNumGeometries()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.CustomArea.fromJsonFeature(com.graphhopper.util.JsonFeature)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getGeometryN(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.EncodingManager.deserializeEncodedValueList(java.lang.String)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.lang.String, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.EncodingManager.fromProperties(com.graphhopper.storage.StorableProperties)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ArrayNode.forEach(java.util.function.Consumer)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.EncodingManager.lambda.fromProperties(java.util.LinkedHashMap, java.lang.String, com.fasterxml.jackson.databind.JsonNode)",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.JsonNode.textValue()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.EncodingManager.toEncodedValuesAsString()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.EncodingManager.toTurnEncodedValuesAsString()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.writeValueAsString(java.lang.Object)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.MaxSpeedCalculator.createLegalDefaultSpeeds()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.net.URL, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.MaxSpeedCalculator.createLegalDefaultSpeeds()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.MaxSpeedCalculator.createLegalDefaultSpeeds()",
+    "thirdPartyMethod" : "de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.<init>(java.util.Map, java.util.Map)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.<init>(com.graphhopper.storage.Graph)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.<init>(com.graphhopper.storage.Graph)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntScatterSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity(com.graphhopper.util.EdgeIteratorState, double, java.util.function.ToDoubleFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity(com.graphhopper.util.EdgeIteratorState, double, java.util.function.ToDoubleFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity(com.graphhopper.util.EdgeIteratorState, double, java.util.function.ToDoubleFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity(com.graphhopper.util.EdgeIteratorState, double, java.util.function.ToDoubleFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity(com.graphhopper.util.EdgeIteratorState, double, java.util.function.ToDoubleFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.removeFirst()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.RoadDensityCalculator.calcRoadDensity(com.graphhopper.util.EdgeIteratorState, double, java.util.function.ToDoubleFunction)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.clear()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.filter(java.util.Map)",
+    "thirdPartyMethod" : "de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.isRelevantTagKey(java.lang.String)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.lambda.handleWayTags(java.lang.String, java.util.Map, java.util.Map)",
+    "thirdPartyMethod" : "de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.Result.getTags()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.lambda.handleWayTags(java.lang.String, java.util.Map, java.util.Map)",
+    "thirdPartyMethod" : "de.westnordost.osm_legal_default_speeds.LegalDefaultSpeeds.getSpeedLimits(java.lang.String, java.util.Map, java.util.List, kotlin.jvm.functions.Function2)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.DefaultMaxSpeedParser.lambda.handleWayTags(java.lang.String, kotlin.jvm.functions.Function0)",
+    "thirdPartyMethod" : "kotlin.jvm.functions.Function0.invoke()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.<init>(com.graphhopper.storage.BaseGraph)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntHashMap.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addArtificialEdges(java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntMap.put(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addArtificialEdges(java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addArtificialEdges(java.util.List)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntMap.getOrDefault(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaNodeRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaNodeRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntMap.getOrDefault(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaNodeRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaWayRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaWayRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIntMap.getOrDefault(int, int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaWayRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.addViaWayRestrictions(java.util.List, com.graphhopper.routing.ev.BooleanEncodedValue)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.util.parsers.RestrictionSetter.ignoreViaWayRestriction(com.graphhopper.reader.osm.Pair)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.routing.weighting.AvoidEdgesWeighting.calcEdgeWeight(com.graphhopper.util.EdgeIteratorState, boolean)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntSet.contains(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.weighting.QueryGraphWeighting.getOriginalEdge(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.routing.weighting.custom.CustomModelParser.createClassTemplate(long, java.util.Set, double, java.util.Set, double, com.graphhopper.routing.ev.EncodedValueLookup, java.util.Map)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getGeometryType()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.InMemConstructionIndex.InMemLeafEntry.<init>(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.storage.index.InMemConstructionIndex.InMemLeafEntry.toString()",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.toString()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.InMemConstructionIndex.addToAllTilesOnLine(int, double, double, double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.storage.index.IndexStructureInfo.create(com.graphhopper.util.shapes.BBox, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.storage.index.IndexStructureInfo.create(com.graphhopper.util.shapes.BBox, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.toArray()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.IndexStructureInfo.create(com.graphhopper.util.shapes.BBox, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.LineIntIndex.onEdge(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.storage.index.LineIntIndex.query(com.graphhopper.util.shapes.BBox, com.graphhopper.storage.index.LocationIndex.Visitor)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.LineIntIndex.store(com.graphhopper.storage.index.InMemConstructionIndex.InMemEntry, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.storage.index.LineIntIndex.store(com.graphhopper.storage.index.InMemConstructionIndex.InMemEntry, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.LocationIndexTree.findClosest(double, double, com.graphhopper.routing.util.EdgeFilter)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.<init>()"
+  }, {
+    "caller" : "com.graphhopper.storage.index.LocationIndexTree.lambda.findClosest(com.carrotsearch.hppc.IntHashSet, com.graphhopper.routing.util.EdgeFilter, double, double, com.graphhopper.storage.index.Snap, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntHashSet.add(int)"
+  }, {
+    "caller" : "com.graphhopper.storage.index.PixelGridTraversal.traverse(org.locationtech.jts.geom.Coordinate, org.locationtech.jts.geom.Coordinate, java.util.function.Consumer)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.calcSortOrder(int[], int[], int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.sorting.IndirectSort.mergesort(int, int, com.carrotsearch.hppc.sorting.IndirectComparator)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.constant(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.invert(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.invert(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.invert(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.invert(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.isPermutation(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.<init>(long)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.isPermutation(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.set(long)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.isPermutation(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.BitSet.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.isPermutation(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.isPermutation(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.iterator()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.range(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.range(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.range(int, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.reverse(com.carrotsearch.hppc.IntArrayList)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.shuffle(com.carrotsearch.hppc.IntArrayList, java.util.Random)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.transform(com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.transform(com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.transform(com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates(com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates(com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates(com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates(com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.withoutConsecutiveDuplicates(com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.isEmpty()"
+  }, {
+    "caller" : "com.graphhopper.util.ArrayUtil.zero(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>(int)"
+  }, {
+    "caller" : "com.graphhopper.util.DepthFirstSearch.start(com.graphhopper.util.EdgeExplorer, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.DepthFirstSearch.start(com.graphhopper.util.EdgeExplorer, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.size()"
+  }, {
+    "caller" : "com.graphhopper.util.DepthFirstSearch.start(com.graphhopper.util.EdgeExplorer, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.removeLast()"
+  }, {
+    "caller" : "com.graphhopper.util.DepthFirstSearch.start(com.graphhopper.util.EdgeExplorer, int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayDeque.addLast(int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.checkAdjacent(com.graphhopper.util.EdgeIteratorState)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.createCircle(java.lang.String, double, double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.Coordinate[])"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.createCircle(java.lang.String, double, double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.createRectangle(java.lang.String, double, double, double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.createRectangle(java.lang.String, double, double, double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.Coordinate[])"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.createRectangle(java.lang.String, double, double, double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.createSortedGraph(com.graphhopper.storage.Graph, com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.goFurther(int)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.set(int, int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.lambda.createCircle(com.graphhopper.util.shapes.GHPoint)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.pathsEqualExceptOneEdge(com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.pathsEqualExceptOneEdge(com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.size()"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.pathsEqualExceptOneEdge(com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.size()"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.pathsEqualExceptOneEdge(com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.pathsEqualExceptOneEdge(com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntArrayList.add(int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.pathsEqualExceptOneEdge(com.graphhopper.storage.Graph, com.carrotsearch.hppc.IntIndexedContainer, com.carrotsearch.hppc.IntIndexedContainer)",
+    "thirdPartyMethod" : "com.carrotsearch.hppc.IntIndexedContainer.get(int)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.readCountries()",
+    "thirdPartyMethod" : "com.bedatadriven.jackson.datatype.jts.JtsModule.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.readCountries()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.readValue(java.io.Reader, java.lang.Class)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.readCountries()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)"
+  }, {
+    "caller" : "com.graphhopper.util.GHUtility.readCountries()",
+    "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.calcAscendDescend(com.graphhopper.ResponsePath, com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setDescend(double)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.calcAscendDescend(com.graphhopper.ResponsePath, com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setAscend(double)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setTime(long)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.addError(java.lang.Throwable)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setDescription(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setDistance(double)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setWaypoints(com.graphhopper.util.PointList)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.addPathDetails(java.util.Map)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setWaypointIndices(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setPoints(com.graphhopper.util.PointList)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setRouteWeight(double)"
+  }, {
+    "caller" : "com.graphhopper.util.PathMerger.doWork(com.graphhopper.util.PointList, java.util.List, com.graphhopper.routing.ev.EncodedValueLookup, com.graphhopper.util.Translation)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setInstructions(com.graphhopper.util.InstructionList)"
+  }, {
+    "caller" : "com.graphhopper.util.PathSimplification.simplify(com.graphhopper.ResponsePath, com.graphhopper.util.RamerDouglasPeucker, boolean)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.getPoints()"
+  }, {
+    "caller" : "com.graphhopper.util.PathSimplification.simplify(com.graphhopper.ResponsePath, com.graphhopper.util.RamerDouglasPeucker, boolean)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.getInstructions()"
+  }, {
+    "caller" : "com.graphhopper.util.PathSimplification.simplify(com.graphhopper.ResponsePath, com.graphhopper.util.RamerDouglasPeucker, boolean)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.getPathDetails()"
+  }, {
+    "caller" : "com.graphhopper.util.PathSimplification.simplify(com.graphhopper.ResponsePath, com.graphhopper.util.RamerDouglasPeucker, boolean)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.setWaypointIndices(java.util.List)"
+  }, {
+    "caller" : "com.graphhopper.util.PathSimplification.simplify(com.graphhopper.ResponsePath, com.graphhopper.util.RamerDouglasPeucker, boolean)",
+    "thirdPartyMethod" : "com.graphhopper.ResponsePath.getWaypointIndices()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.fromEnvelope(org.locationtech.jts.geom.Envelope)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMaxX()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.fromEnvelope(org.locationtech.jts.geom.Envelope)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMinX()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.fromEnvelope(org.locationtech.jts.geom.Envelope)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMaxY()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.fromEnvelope(org.locationtech.jts.geom.Envelope)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMinY()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.intersects(com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "org.locationtech.jts.algorithm.RectangleLineIntersector.<init>(org.locationtech.jts.geom.Envelope)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.intersects(org.locationtech.jts.algorithm.RectangleLineIntersector, com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "org.locationtech.jts.algorithm.RectangleLineIntersector.intersects(org.locationtech.jts.geom.Coordinate, org.locationtech.jts.geom.Coordinate)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.intersects(org.locationtech.jts.algorithm.RectangleLineIntersector, com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.BBox.toEnvelope(com.graphhopper.util.shapes.BBox)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.<init>(double, double, double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<clinit>()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.impl.PackedCoordinateSequence.Double.<init>(org.locationtech.jts.geom.Coordinate[], int)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.isRectangle()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometry.getGeometry()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.<init>(org.locationtech.jts.geom.Polygonal)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.CoordinateSequence)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getEnvelopeInternal()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(double[], double[])",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(org.locationtech.jts.geom.prep.PreparedPolygon)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getEnvelopeInternal()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(org.locationtech.jts.geom.prep.PreparedPolygon)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.getGeometry()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.<init>(org.locationtech.jts.geom.prep.PreparedPolygon)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.isRectangle()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.contains(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPoint(org.locationtech.jts.geom.Coordinate)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.contains(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.contains(double, double)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometry.contains(org.locationtech.jts.geom.Geometry)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.create(org.locationtech.jts.geom.Polygon)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedPolygon.<init>(org.locationtech.jts.geom.Polygonal)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.getMaxLat()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMaxY()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.getMaxLon()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMaxX()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.getMinLat()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMinY()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.getMinLon()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.getMinX()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.intersects(com.graphhopper.util.PointList)",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometry.intersects(org.locationtech.jts.geom.Geometry)"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.toString()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometry.getGeometry()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.toString()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getNumPoints()"
+  }, {
+    "caller" : "com.graphhopper.util.shapes.Polygon.toString()",
+    "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getNumGeometries()"
+  } ]
+}
