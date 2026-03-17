@@ -1,0 +1,121 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+      "title": "Uncontrolled Resource Consumption in commons-io:commons-io",
+      "description": "Affected versions of commons-io:commons-io are vulnerable to Uncontrolled Resource Consumption.",
+      "ecosystem": "maven",
+      "severity": "HIGH",
+      "references": {
+        "cveIds": [
+          "CVE-2024-47554"
+        ],
+        "cweIds": [
+          "CWE-400: Uncontrolled Resource Consumption"
+        ],
+        "owaspIds": [
+          "A06:2021 - Vulnerable and Outdated Components"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-78wr-2p64-hpwj",
+          "https://nvd.nist.gov/vuln/detail/CVE-2024-47554"
+        ]
+      },
+      "announcedAt": "2024-10-03T12:30:48Z",
+      "ruleText": {
+        "id": "ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+        "message": "Affected versions of commons-io:commons-io are vulnerable to Uncontrolled Resource Consumption.",
+        "severity": "ERROR",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2024-47554",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-78wr-2p64-hpwj",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2024-10-03T12:30:48Z",
+          "references": [
+            "https://github.com/advisories/GHSA-78wr-2p64-hpwj",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-47554"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "commons-io:commons-io": "2.14.0"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2024-47554",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 144614,
+              "rv_id": 1316919,
+              "rule_id": "8GUQRRR",
+              "version_id": "LjTGpE6",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "commons-io:commons-io",
+              "version": ">=2.0, <2.14.0"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ],
+        "patterns": [
+          {
+            "pattern-either": [
+              {
+                "pattern": "new org.apache.commons.io.input.XmlStreamReader(...)"
+              },
+              {
+                "pattern": "org.apache.commons.io.input.XmlStreamReader(...)"
+              }
+            ]
+          }
+        ]
+      },
+      "reachability": "REACHABILITY",
+      "vulnerableDependencies": [
+        {
+          "name": "commons-io:commons-io",
+          "versionSpecifier": ">=2.0, <2.14.0"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "commons-io:commons-io",
+          "versionSpecifier": "2.14.0"
+        }
+      ],
+      "cve": "CVE-2024-47554",
+      "ghsa": "GHSA-78wr-2p64-hpwj",
+      "reachableIf": ""
+    }
+  ],
+  "totalCount": "1"
+}

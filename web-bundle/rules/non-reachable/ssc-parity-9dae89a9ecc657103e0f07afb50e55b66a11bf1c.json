@@ -1,0 +1,169 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-parity-9dae89a9ecc657103e0f07afb50e55b66a11bf1c",
+      "title": "Uncontrolled Resource Consumption in org.eclipse.jetty.ee10:jetty-ee10-servlets",
+      "description": "Affected versions of org.eclipse.jetty.ee10:jetty-ee10-servlets, org.eclipse.jetty.ee8:jetty-ee8-servlets, org.eclipse.jetty.ee9:jetty-ee9-servlets, and org.eclipse.jetty:jetty-servlets are vulnerable to Uncontrolled Resource Consumption.",
+      "ecosystem": "maven",
+      "severity": "MEDIUM",
+      "references": {
+        "cveIds": [
+          "CVE-2024-9823"
+        ],
+        "cweIds": [
+          "CWE-400: Uncontrolled Resource Consumption"
+        ],
+        "owaspIds": [
+          "A06:2021 - Vulnerable and Outdated Components"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-j26w-f9rq-mr2q",
+          "https://nvd.nist.gov/vuln/detail/CVE-2024-9823"
+        ]
+      },
+      "announcedAt": "2024-10-14T15:30:46Z",
+      "ruleText": {
+        "id": "ssc-parity-9dae89a9ecc657103e0f07afb50e55b66a11bf1c",
+        "message": "Affected versions of org.eclipse.jetty.ee10:jetty-ee10-servlets, org.eclipse.jetty.ee8:jetty-ee8-servlets, org.eclipse.jetty.ee9:jetty-ee9-servlets, and org.eclipse.jetty:jetty-servlets are vulnerable to Uncontrolled Resource Consumption.",
+        "severity": "WARNING",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2024-9823",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-j26w-f9rq-mr2q",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2024-10-14T15:30:46Z",
+          "references": [
+            "https://github.com/advisories/GHSA-j26w-f9rq-mr2q",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-9823"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "org.eclipse.jetty.ee10:jetty-ee10-servlets": "12.0.3"
+            },
+            {
+              "org.eclipse.jetty.ee8:jetty-ee8-servlets": "12.0.3"
+            },
+            {
+              "org.eclipse.jetty.ee9:jetty-ee9-servlets": "12.0.3"
+            },
+            {
+              "org.eclipse.jetty:jetty-servlets": "9.4.54"
+            },
+            {
+              "org.eclipse.jetty:jetty-servlets": "11.0.18"
+            },
+            {
+              "org.eclipse.jetty:jetty-servlets": "10.0.18"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "MODERATE",
+          "sca-vuln-database-identifier": "CVE-2024-9823",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 144899,
+              "rv_id": 1300319,
+              "rule_id": "10UO6vd",
+              "version_id": "5PTq9QZ",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-9dae89a9ecc657103e0f07afb50e55b66a11bf1c",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "org.eclipse.jetty.ee10:jetty-ee10-servlets",
+              "version": ">=12.0.0, <12.0.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "org.eclipse.jetty.ee8:jetty-ee8-servlets",
+              "version": ">=12.0.0, <12.0.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "org.eclipse.jetty.ee9:jetty-ee9-servlets",
+              "version": ">=12.0.0, <12.0.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "org.eclipse.jetty:jetty-servlets",
+              "version": ">=10.0.0, <10.0.18"
+            },
+            {
+              "namespace": "maven",
+              "package": "org.eclipse.jetty:jetty-servlets",
+              "version": ">=11.0.0, <11.0.18"
+            },
+            {
+              "namespace": "maven",
+              "package": "org.eclipse.jetty:jetty-servlets",
+              "version": ">=9.0.0, <9.4.54"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ]
+      },
+      "reachability": "VERSION_SPECIFIER",
+      "vulnerableDependencies": [
+        {
+          "name": "org.eclipse.jetty.ee10:jetty-ee10-servlets",
+          "versionSpecifier": ">=12.0.0, <12.0.3"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "org.eclipse.jetty.ee10:jetty-ee10-servlets",
+          "versionSpecifier": "12.0.3"
+        },
+        {
+          "name": "org.eclipse.jetty.ee8:jetty-ee8-servlets",
+          "versionSpecifier": "12.0.3"
+        },
+        {
+          "name": "org.eclipse.jetty.ee9:jetty-ee9-servlets",
+          "versionSpecifier": "12.0.3"
+        },
+        {
+          "name": "org.eclipse.jetty:jetty-servlets",
+          "versionSpecifier": "9.4.54"
+        },
+        {
+          "name": "org.eclipse.jetty:jetty-servlets",
+          "versionSpecifier": "11.0.18"
+        },
+        {
+          "name": "org.eclipse.jetty:jetty-servlets",
+          "versionSpecifier": "10.0.18"
+        }
+      ],
+      "cve": "CVE-2024-9823",
+      "ghsa": "GHSA-j26w-f9rq-mr2q",
+      "reachableIf": ""
+    }
+  ],
+  "totalCount": "1"
+}

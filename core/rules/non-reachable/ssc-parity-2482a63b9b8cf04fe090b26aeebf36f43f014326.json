@@ -1,0 +1,125 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+      "title": "Server-Side Request Forgery (SSRF) in ch.qos.logback:logback-core",
+      "description": "Affected versions of ch.qos.logback:logback-core are vulnerable to Server-Side Request Forgery (SSRF).",
+      "ecosystem": "maven",
+      "severity": "LOW",
+      "references": {
+        "cveIds": [
+          "CVE-2024-12801"
+        ],
+        "cweIds": [
+          "CWE-918: Server-Side Request Forgery (SSRF)"
+        ],
+        "owaspIds": [
+          "A01:2025 - Broken Access Control",
+          "A06:2021 - Vulnerable and Outdated Components",
+          "A10:2021 - Server-Side Request Forgery (SSRF)"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-6v67-2wr5-gvf4",
+          "https://nvd.nist.gov/vuln/detail/CVE-2024-12801"
+        ]
+      },
+      "announcedAt": "2024-12-19T18:31:37Z",
+      "ruleText": {
+        "id": "ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Server-Side Request Forgery (SSRF).",
+        "severity": "INFO",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2024-12801",
+          "cwe": [
+            "CWE-918: Server-Side Request Forgery (SSRF)"
+          ],
+          "ghsa": "GHSA-6v67-2wr5-gvf4",
+          "owasp": [
+            "A01:2025 - Broken Access Control",
+            "A06:2021 - Vulnerable and Outdated Components",
+            "A10:2021 - Server-Side Request Forgery (SSRF)"
+          ],
+          "publish-date": "2024-12-19T18:31:37Z",
+          "references": [
+            "https://github.com/advisories/GHSA-6v67-2wr5-gvf4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-12801"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.5.13"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.15"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "LOW",
+          "sca-vuln-database-identifier": "CVE-2024-12801",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Server-Side Request Forgery (SSRF)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 151156,
+              "rv_id": 1290474,
+              "rule_id": "zdUKJAB",
+              "version_id": "qkTObgq",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "version": "<1.3.15"
+            },
+            {
+              "namespace": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "version": ">=1.4.0, <1.5.13"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ]
+      },
+      "reachability": "VERSION_SPECIFIER",
+      "vulnerableDependencies": [
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "<1.3.15"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "1.5.13"
+        },
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "1.3.15"
+        }
+      ],
+      "cve": "CVE-2024-12801",
+      "ghsa": "GHSA-6v67-2wr5-gvf4",
+      "reachableIf": ""
+    }
+  ],
+  "totalCount": "1"
+}

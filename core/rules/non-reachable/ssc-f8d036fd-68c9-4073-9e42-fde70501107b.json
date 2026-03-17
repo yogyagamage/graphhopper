@@ -1,0 +1,145 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+      "title": "Uncontrolled Resource Consumption in ch.qos.logback:logback-core",
+      "description": "Affected versions of ch.qos.logback:logback-core are vulnerable to Uncontrolled Resource Consumption. The vulnerability lies in Uncontrolled Resource Consumption ('Resource Exhaustion') through the logback receiver component, enabling attackers to initiate a denial-of-service attack by transmitting malicious data.",
+      "ecosystem": "maven",
+      "severity": "HIGH",
+      "references": {
+        "cveIds": [
+          "CVE-2023-6481"
+        ],
+        "cweIds": [
+          "CWE-400: Uncontrolled Resource Consumption"
+        ],
+        "owaspIds": [
+          "A06:2021 - Vulnerable and Outdated Components"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-gm62-rw4g-vrc4",
+          "https://nvd.nist.gov/vuln/detail/CVE-2023-6481"
+        ]
+      },
+      "announcedAt": "2023-12-04T09:30:23Z",
+      "ruleText": {
+        "id": "ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Uncontrolled Resource Consumption. The vulnerability lies in Uncontrolled Resource Consumption ('Resource Exhaustion') through the logback receiver component, enabling attackers to initiate a denial-of-service attack by transmitting malicious data.",
+        "severity": "ERROR",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2023-6481",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-gm62-rw4g-vrc4",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2023-12-04T09:30:23Z",
+          "references": [
+            "https://github.com/advisories/GHSA-gm62-rw4g-vrc4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6481"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.4.14"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.14"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.2.13"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2023-6481",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 111654,
+              "rv_id": 1319192,
+              "rule_id": "AbU9X8Z",
+              "version_id": "vdTXDoE",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "version": "==1.2.12"
+            },
+            {
+              "namespace": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "version": "==1.3.13"
+            },
+            {
+              "namespace": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "version": "==1.4.13"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ],
+        "patterns": [
+          {
+            "pattern-either": [
+              {
+                "pattern": "new ch.qos.logback.core.net.HardenedObjectInputStream(...);"
+              },
+              {
+                "pattern": "ch.qos.logback.core.net.HardenedObjectInputStream(...);"
+              }
+            ]
+          }
+        ]
+      },
+      "reachability": "REACHABILITY",
+      "vulnerableDependencies": [
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "==1.2.12"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "1.4.14"
+        },
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "1.3.14"
+        },
+        {
+          "name": "ch.qos.logback:logback-core",
+          "versionSpecifier": "1.2.13"
+        }
+      ],
+      "cve": "CVE-2023-6481",
+      "ghsa": "GHSA-gm62-rw4g-vrc4",
+      "reachableIf": ""
+    }
+  ],
+  "totalCount": "1"
+}

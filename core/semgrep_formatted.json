@@ -1,0 +1,2417 @@
+{
+  "version": "1.153.0",
+  "results": [
+    {
+      "check_id": "ssc-0583e480-5b5d-417c-9943-a424ac4588cd",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "protobuf-java and protobuf-javalite 3.21.x before 3.21.7, 3.20.x before 3.20.3, 3.19.x before 3.19.6, 3.16.x before 3.16.3 are vulnerable to a Denial of Service (DoS) attack through specially crafted input messages. It is recommended to upgrade protobuf-java and protobuf-javalite 3.21.x to 3.21.7, 3.20.x to 3.20.3, 3.19.x to 3.19.6, and 3.16.x to 3.16.3.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2022-3509",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-g5ww-5jh7-63cx",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2022-12-12T15:30:33Z",
+          "references": [
+            "https://github.com/advisories/GHSA-g5ww-5jh7-63cx",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3509"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.google.protobuf:protobuf-java": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.16.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.16.3"
+            }
+          ],
+          "sca-kind": "upgrade-only",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2022-3509",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 94356,
+              "rv_id": 1319009,
+              "rule_id": "9AUd1xn",
+              "version_id": "DkTk3Y3",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-0583e480-5b5d-417c-9943-a424ac4588cd",
+              "origin": "custom",
+              "rule_name": "ssc-0583e480-5b5d-417c-9943-a424ac4588cd"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-0583e480-5b5d-417c-9943-a424ac4588cd",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-0583e480-5b5d-417c-9943-a424ac4588cd",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "e0f6995024992e8e368d39b2ff70303fcbf4748e8fd371ef98aac0cb3710c3d97bee1124b7ff43711d7bb27e21c442bd773d26daf4b7681f32a0e286de8b2b92_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "semver_range": ">=3.0.0, <3.16.3"
+            },
+            "found_dependency": {
+              "package": "com.google.protobuf:protobuf-java",
+              "version": "3.12.2",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of commons-io:commons-io are vulnerable to Uncontrolled Resource Consumption.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2024-47554",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-78wr-2p64-hpwj",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2024-10-03T12:30:48Z",
+          "references": [
+            "https://github.com/advisories/GHSA-78wr-2p64-hpwj",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-47554"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "commons-io:commons-io": "2.14.0"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2024-47554",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 144614,
+              "rv_id": 1316919,
+              "rule_id": "8GUQRRR",
+              "version_id": "LjTGpE6",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+              "origin": "custom",
+              "rule_name": "ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-40d84406-4b26-4c95-b34a-2e86e66c5b1e",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "1d7c24b3be871d29efaf77f8a0e7ab4b7583ba84d8b008c2d306b1611572b3e0c9248da60a34430173aa01c6967e92b0d6a347c11c71b9197c95b5aa86e58809_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "commons-io:commons-io",
+              "semver_range": ">=2.0, <2.14.0"
+            },
+            "found_dependency": {
+              "package": "commons-io:commons-io",
+              "version": "2.11.0",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core and ch.qos.logback:logback-classic are vulnerable to Uncontrolled Resource Consumption. A serialization vulnerability in the logback reciever component part of lockback allows an attacker to mount a Denial-Of-Service attack by sending poisoned data.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2023-6378",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption",
+            "CWE-502: Deserialization of Untrusted Data"
+          ],
+          "ghsa": "GHSA-vmq6-5m68-f53m",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components",
+            "A08:2017 - Insecure Deserialization",
+            "A08:2021 - Software and Data Integrity Failures",
+            "A08:2025 - Software or Data Integrity Failures"
+          ],
+          "publish-date": "2023-11-29T12:30:16Z",
+          "references": [
+            "https://github.com/advisories/GHSA-vmq6-5m68-f53m",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6378"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-classic": "1.4.12"
+            },
+            {
+              "ch.qos.logback:logback-classic": "1.3.12"
+            },
+            {
+              "ch.qos.logback:logback-classic": "1.2.13"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.4.12"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.12"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.2.13"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2023-6378",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)",
+            "Insecure Deserialization "
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 94175,
+              "rv_id": 1322173,
+              "rule_id": "4bURkB9",
+              "version_id": "gETPpqE",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+              "origin": "custom",
+              "rule_name": "ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "76aac1d0b2dfaada19bb089fe84f71d3f871758627ad90243801eb8e7196c3c93b78faf4590ee41f4b9d7acc545d17df5dda39d92198acd4f4067934f8b860ed_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-classic",
+              "semver_range": "<1.2.13"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-classic",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "direct",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": [
+                {
+                  "package": "ch.qos.logback:logback-core",
+                  "version": "1.2.12"
+                }
+              ]
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core and ch.qos.logback:logback-classic are vulnerable to Uncontrolled Resource Consumption. A serialization vulnerability in the logback reciever component part of lockback allows an attacker to mount a Denial-Of-Service attack by sending poisoned data.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2023-6378",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption",
+            "CWE-502: Deserialization of Untrusted Data"
+          ],
+          "ghsa": "GHSA-vmq6-5m68-f53m",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components",
+            "A08:2017 - Insecure Deserialization",
+            "A08:2021 - Software and Data Integrity Failures",
+            "A08:2025 - Software or Data Integrity Failures"
+          ],
+          "publish-date": "2023-11-29T12:30:16Z",
+          "references": [
+            "https://github.com/advisories/GHSA-vmq6-5m68-f53m",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6378"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-classic": "1.4.12"
+            },
+            {
+              "ch.qos.logback:logback-classic": "1.3.12"
+            },
+            {
+              "ch.qos.logback:logback-classic": "1.2.13"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.4.12"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.12"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.2.13"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2023-6378",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)",
+            "Insecure Deserialization "
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 94175,
+              "rv_id": 1322173,
+              "rule_id": "4bURkB9",
+              "version_id": "gETPpqE",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+              "origin": "custom",
+              "rule_name": "ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-7b53b0f6-bdb0-4c78-9c18-f4332f70145a",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "76aac1d0b2dfaada19bb089fe84f71d3f871758627ad90243801eb8e7196c3c93b78faf4590ee41f4b9d7acc545d17df5dda39d92198acd4f4067934f8b860ed_1",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "semver_range": "<1.2.13"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-core",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-b60b786d-75c2-6082-6376-1c8ae9f06ab1",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of com.fasterxml.jackson.core:jackson-core and tools.jackson.core:jackson-core are vulnerable to Allocation of Resources Without Limits or Throttling. Jackson Core's non-blocking (async) JSON parser bypasses `StreamReadConstraints.maxNumberLength`, allowing an attacker to submit JSON containing extremely long numeric literals that the async parser will accept and buffer without length validation. This can trigger excessive memory allocation in the parser's `TextBuffer` and potentially severe CPU exhaustion during numeric coercion (e.g., `BigInteger`/`BigDecimal` parsing), resulting in a Denial of Service in applications using the async parser APIs (such as reactive/WebFlux pipelines).",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "",
+          "cwe": [
+            "CWE-770: Allocation of Resources Without Limits or Throttling"
+          ],
+          "ghsa": "GHSA-72hv-8253-57qq",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2026-02-28T02:01:05Z",
+          "references": [
+            "https://github.com/advisories/GHSA-72hv-8253-57qq"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.fasterxml.jackson.core:jackson-core": "3.1.0"
+            },
+            {
+              "com.fasterxml.jackson.core:jackson-core": "2.21.1"
+            },
+            {
+              "com.fasterxml.jackson.core:jackson-core": "2.18.6"
+            },
+            {
+              "tools.jackson.core:jackson-core": "3.1.0"
+            },
+            {
+              "tools.jackson.core:jackson-core": "2.21.1"
+            },
+            {
+              "tools.jackson.core:jackson-core": "2.18.6"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "GHSA-72hv-8253-57qq",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 281345,
+              "rv_id": 1316757,
+              "rule_id": "zdUADbW",
+              "version_id": "1QT2Xe7",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-b60b786d-75c2-6082-6376-1c8ae9f06ab1",
+              "origin": "custom",
+              "rule_name": "ssc-b60b786d-75c2-6082-6376-1c8ae9f06ab1"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-b60b786d-75c2-6082-6376-1c8ae9f06ab1",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-b60b786d-75c2-6082-6376-1c8ae9f06ab1",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "62355d6562302c3ee94dbe7efbb2001fc25be9ef4c19f64af67340b7d861ceb9b8b6e4ce9f36a6847ee35612a8ac80b0f7effdc1c8f29fa822a9c58a38e0e952_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "semver_range": ">=2.0.0, <=2.18.5"
+            },
+            "found_dependency": {
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "version": "2.13.5",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "direct",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "A Affected versions of com.google.protobuf:protobuf-java and com.google.protobuf:protobuf-javalite are vulnerable to Uncontrolled Resource Consumption. The vulnerability stems from a parsing issue in the Message-Type Extensions, affecting certain package versions and allowing for Denial of Service (DoS) attacks through inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields; exploiting it triggers conversions between mutable and immutable forms, potentially leading to extended garbage collection pauses.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2022-3510",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-4gg5-vx3j-xwc7",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2022-12-12T15:30:33Z",
+          "references": [
+            "https://github.com/advisories/GHSA-4gg5-vx3j-xwc7",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3510"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.google.protobuf:protobuf-java": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.16.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.16.3"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2022-3510",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 93725,
+              "rv_id": 1315662,
+              "rule_id": "KxUvb34",
+              "version_id": "7ZTBXqP",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+              "origin": "custom",
+              "rule_name": "ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "15aa7fae43e546cdf86dffb2f6050b9f2bc4c57c24c95295263a3fe5f07425aae32926154649681c03cebcfa8adb501ed29d878671eae78da6493a0727b99db6_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "semver_range": ">=3.0.0, <3.16.3"
+            },
+            "found_dependency": {
+              "package": "com.google.protobuf:protobuf-java",
+              "version": "3.12.2",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-cf94cbc1-a41a-74e1-6052-4dc1c12e1d04",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of com.fasterxml.jackson.core:jackson-core are vulnerable to Stack-based Buffer Overflow. Jackson-core is vulnerable to a denial-of-service attack where an attacker provides a deeply nested input document, triggering a Stackoverflow error during parsing. This flaw can be exploited when processing untrusted data, potentially undermining application availability.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2025-52999",
+          "cwe": [
+            "CWE-121: Stack-based Buffer Overflow"
+          ],
+          "ghsa": "GHSA-h46c-h94j-95f3",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2025-06-27T15:22:22Z",
+          "references": [
+            "https://github.com/advisories/GHSA-h46c-h94j-95f3",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-52999"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.fasterxml.jackson.core:jackson-core": "2.15.0"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2025-52999",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 204319,
+              "rv_id": 1319389,
+              "rule_id": "0oUyg08",
+              "version_id": "kbTDr9R",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cf94cbc1-a41a-74e1-6052-4dc1c12e1d04",
+              "origin": "custom",
+              "rule_name": "ssc-cf94cbc1-a41a-74e1-6052-4dc1c12e1d04"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cf94cbc1-a41a-74e1-6052-4dc1c12e1d04",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cf94cbc1-a41a-74e1-6052-4dc1c12e1d04",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "64f215fa45fcfae1f5e1590d1536ce2938a40dc213fd91be0287cdd9a65d728d1adaf53fdd6e46cff4a7b7ac4b641a0d624f6b17bf99212fd646de8eb6623fca_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "semver_range": "<2.15.0"
+            },
+            "found_dependency": {
+              "package": "com.fasterxml.jackson.core:jackson-core",
+              "version": "2.13.5",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "direct",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-d0f97785-4bb6-89a6-7958-b109dfc391e2",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of com.google.protobuf:protobuf-java and com.google.protobuf:protobuf-kotlin are vulnerable to Incorrect Behavior Order. Parsing of unknown fields in the Java Protobuf runtime can be abused by a crafted binary payload (~800 KB) to trigger excessive short-lived object allocations, causing repeated GC pauses and prolonged parsing times, resulting in a Denial of Service.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2021-22569",
+          "cwe": [
+            "CWE-696: Incorrect Behavior Order"
+          ],
+          "ghsa": "GHSA-wrvw-hg22-4m67",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2022-01-07T22:31:44Z",
+          "references": [
+            "https://github.com/advisories/GHSA-wrvw-hg22-4m67",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-22569"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.google.protobuf:protobuf-java": "3.19.2"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.18.2"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.16.1"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.19.2"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.18.2"
+            }
+          ],
+          "sca-kind": "upgrade-only",
+          "sca-reachable-if": "you deserialize untrusted protobuf data into a class of any of your Java protobuf packages, using a function such as `parseFrom(...)`",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2021-22569",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 238618,
+              "rv_id": 1322675,
+              "rule_id": "lBUlDxz",
+              "version_id": "7ZTBJWR",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-d0f97785-4bb6-89a6-7958-b109dfc391e2",
+              "origin": "custom",
+              "rule_name": "ssc-d0f97785-4bb6-89a6-7958-b109dfc391e2"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-d0f97785-4bb6-89a6-7958-b109dfc391e2",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-d0f97785-4bb6-89a6-7958-b109dfc391e2",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "151e5e73720938999868978984e165142dd9b4613cf2ed39552b12a38d6f4b548764cc27b35ca7492bb1669ef64789842f118da8c693621653ad8af220d12798_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "semver_range": "<3.16.1"
+            },
+            "found_dependency": {
+              "package": "com.google.protobuf:protobuf-java",
+              "version": "3.12.2",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Uncontrolled Resource Consumption. The vulnerability lies in Uncontrolled Resource Consumption ('Resource Exhaustion') through the logback receiver component, enabling attackers to initiate a denial-of-service attack by transmitting malicious data.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2023-6481",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-gm62-rw4g-vrc4",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2023-12-04T09:30:23Z",
+          "references": [
+            "https://github.com/advisories/GHSA-gm62-rw4g-vrc4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-6481"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.4.14"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.14"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.2.13"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2023-6481",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 111654,
+              "rv_id": 1319192,
+              "rule_id": "AbU9X8Z",
+              "version_id": "vdTXDoE",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+              "origin": "custom",
+              "rule_name": "ssc-f8d036fd-68c9-4073-9e42-fde70501107b"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-f8d036fd-68c9-4073-9e42-fde70501107b",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "d573141edf6124d5e51091d7524d1f1d65d93353533c9b1f46786858cb7eeeab528fa7d7738ceee5a18596ba66fd9075ef35f19b892b96d13c3b705744ee6625_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "semver_range": "==1.2.12"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-core",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-parity-0e6c18e2d87a0ffb6d6b73d57001e4600dab2030",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection').",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2024-12798",
+          "cwe": [
+            "CWE-917: Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection')"
+          ],
+          "ghsa": "GHSA-pr98-23f8-jwxv",
+          "owasp": [
+            "A01:2017 - Injection",
+            "A03:2021 - Injection",
+            "A05:2025 - Injection",
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2024-12-19T18:31:37Z",
+          "references": [
+            "https://github.com/advisories/GHSA-pr98-23f8-jwxv",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-12798"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.5.13"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.15"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "MODERATE",
+          "sca-vuln-database-identifier": "CVE-2024-12798",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 151160,
+              "rv_id": 1304060,
+              "rule_id": "j2UgX69",
+              "version_id": "BjTbpO6",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-0e6c18e2d87a0ffb6d6b73d57001e4600dab2030",
+              "origin": "custom",
+              "rule_name": "ssc-parity-0e6c18e2d87a0ffb6d6b73d57001e4600dab2030"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-0e6c18e2d87a0ffb6d6b73d57001e4600dab2030",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-0e6c18e2d87a0ffb6d6b73d57001e4600dab2030",
+          "dev.semgrep.actions": []
+        },
+        "severity": "WARNING",
+        "fingerprint": "9c939609d539a71ef18a23319dd4c4e3b4d74bcbbf4a49a4118c577ec43f099c12249f32357700a8b848b74342b26e1988561a90ec5c9207ffd2aa9bc85b3701_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "semver_range": "<1.3.15"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-core",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Server-Side Request Forgery (SSRF).",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2024-12801",
+          "cwe": [
+            "CWE-918: Server-Side Request Forgery (SSRF)"
+          ],
+          "ghsa": "GHSA-6v67-2wr5-gvf4",
+          "owasp": [
+            "A01:2025 - Broken Access Control",
+            "A06:2021 - Vulnerable and Outdated Components",
+            "A10:2021 - Server-Side Request Forgery (SSRF)"
+          ],
+          "publish-date": "2024-12-19T18:31:37Z",
+          "references": [
+            "https://github.com/advisories/GHSA-6v67-2wr5-gvf4",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-12801"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.5.13"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.15"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "LOW",
+          "sca-vuln-database-identifier": "CVE-2024-12801",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Server-Side Request Forgery (SSRF)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 151156,
+              "rv_id": 1290474,
+              "rule_id": "zdUKJAB",
+              "version_id": "qkTObgq",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+              "origin": "custom",
+              "rule_name": "ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-2482a63b9b8cf04fe090b26aeebf36f43f014326",
+          "dev.semgrep.actions": []
+        },
+        "severity": "INFO",
+        "fingerprint": "63f29724032d7c54edff3e6661e191b5c2081dd713b0cd8f745b5f494199821df2a24bd633eed17f9afb51ba84e2250a2dacdd8b32e63bcf23a8aeaa67ea7bbd_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "semver_range": "<1.3.15"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-core",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-parity-3df5adc2111084715c62654597cec0e926de367a",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Improper Input Validation.",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2026-1225",
+          "cwe": [
+            "CWE-20: Improper Input Validation"
+          ],
+          "ghsa": "GHSA-qqpg-mvqg-649v",
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection",
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2026-01-22T12:31:22Z",
+          "references": [
+            "https://github.com/advisories/GHSA-qqpg-mvqg-649v",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-1225"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.5.25"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "LOW",
+          "sca-vuln-database-identifier": "CVE-2026-1225",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Improper Validation"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 275124,
+              "rv_id": 1305350,
+              "rule_id": "PeUWjZ3",
+              "version_id": "kbTDzYg",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-3df5adc2111084715c62654597cec0e926de367a",
+              "origin": "custom",
+              "rule_name": "ssc-parity-3df5adc2111084715c62654597cec0e926de367a"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-3df5adc2111084715c62654597cec0e926de367a",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-3df5adc2111084715c62654597cec0e926de367a",
+          "dev.semgrep.actions": []
+        },
+        "severity": "INFO",
+        "fingerprint": "654855323aef11756b225b56d51b6ee52c7beab2ea86d0e4b9dfa5d8cd52f86ec5eb85049681333ba39be1c0d68c53eb06e95d7cf027febc5cc30d2dc15efd2b_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "semver_range": "<1.5.25"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-core",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-parity-73c108152f6c773e460fb729cf076e87cec249ca",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of com.google.protobuf:protobuf-java, com.google.protobuf:protobuf-javalite, com.google.protobuf:protobuf-kotlin, and com.google.protobuf:protobuf-kotlin-lite are vulnerable to Improper Input Validation.",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2022-3171",
+          "cwe": [
+            "CWE-20: Improper Input Validation"
+          ],
+          "ghsa": "GHSA-h4h5-3hr4-j3g2",
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection",
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2022-10-04T22:17:15Z",
+          "references": [
+            "https://github.com/advisories/GHSA-h4h5-3hr4-j3g2",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3171"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.google.protobuf:protobuf-java": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.16.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.16.3"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.16.3"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "3.16.3"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "MODERATE",
+          "sca-vuln-database-identifier": "CVE-2022-3171",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Improper Validation"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 107518,
+              "rv_id": 1299063,
+              "rule_id": "KxUvJA6",
+              "version_id": "5PTq9JL",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-73c108152f6c773e460fb729cf076e87cec249ca",
+              "origin": "custom",
+              "rule_name": "ssc-parity-73c108152f6c773e460fb729cf076e87cec249ca"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-73c108152f6c773e460fb729cf076e87cec249ca",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-73c108152f6c773e460fb729cf076e87cec249ca",
+          "dev.semgrep.actions": []
+        },
+        "severity": "WARNING",
+        "fingerprint": "f025ea98ca6a7e25278345a19ad4605156d5056e8aa41474451c23f95a72f745967f8f050b33d58960a05d1f1573afeedea18c21a122b0f2c3bab8d91dc45afa_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "semver_range": "<3.16.3"
+            },
+            "found_dependency": {
+              "package": "com.google.protobuf:protobuf-java",
+              "version": "3.12.2",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-parity-b8148c46073fae4c20d0dbd5fac047b370b64fd1",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of ch.qos.logback:logback-core are vulnerable to Improper Input Validation.",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2025-11226",
+          "cwe": [
+            "CWE-20: Improper Input Validation"
+          ],
+          "ghsa": "GHSA-25qh-j22f-pwp8",
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection",
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2025-10-01T09:30:24Z",
+          "references": [
+            "https://github.com/advisories/GHSA-25qh-j22f-pwp8",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-11226"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "ch.qos.logback:logback-core": "1.5.19"
+            },
+            {
+              "ch.qos.logback:logback-core": "1.3.16"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "MODERATE",
+          "sca-vuln-database-identifier": "CVE-2025-11226",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Improper Validation"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 219198,
+              "rv_id": 1284098,
+              "rule_id": "wdU6dAx",
+              "version_id": "3ZTRpQl",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-b8148c46073fae4c20d0dbd5fac047b370b64fd1",
+              "origin": "custom",
+              "rule_name": "ssc-parity-b8148c46073fae4c20d0dbd5fac047b370b64fd1"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-b8148c46073fae4c20d0dbd5fac047b370b64fd1",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-b8148c46073fae4c20d0dbd5fac047b370b64fd1",
+          "dev.semgrep.actions": []
+        },
+        "severity": "WARNING",
+        "fingerprint": "7adebed661c76c750e434025841ad9b87329ded73b8dce44b773a9ec8c330c4791382e9577edd719f7543bd0a27ec933551c75ae86058c311224722650464721_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "ch.qos.logback:logback-core",
+              "semver_range": "<1.3.16"
+            },
+            "found_dependency": {
+              "package": "ch.qos.logback:logback-core",
+              "version": "1.2.12",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "ssc-5a8c5f26-fe34-42a3-8cf7-f38c071e9ae6",
+      "path": "src/main/java/com/graphhopper/reader/osm/pbf/PbfBlobDecoder.java",
+      "start": {
+        "line": 5,
+        "col": 1,
+        "offset": 175
+      },
+      "end": {
+        "line": 5,
+        "col": 58,
+        "offset": 232
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of com.google.protobuf:protobuf-java, com.google.protobuf:protobuf-javalite, com.google.protobuf:protobuf-kotlin, and com.google.protobuf:protobuf-kotlin-lite are vulnerable to Improper Input Validation / Out-of-bounds Write / Uncontrolled Resource Consumption. When parsing unknown fields in the Protobuf Java Lite and Full library, a maliciously crafted message can cause a StackOverflow error and lead to a program crash.",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2024-7254",
+          "cwe": [
+            "CWE-20: Improper Input Validation",
+            "CWE-400: Uncontrolled Resource Consumption",
+            "CWE-787: Out-of-bounds Write"
+          ],
+          "ghsa": "GHSA-735f-pc8j-v9w8",
+          "owasp": [
+            "A03:2021 - Injection",
+            "A05:2025 - Injection",
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2024-09-19T16:06:03Z",
+          "references": [
+            "https://github.com/advisories/GHSA-735f-pc8j-v9w8",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-7254"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.google.protobuf:protobuf-java": "4.28.2"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "4.27.5"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.25.5"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "4.28.2"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "4.27.5"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.25.5"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "4.28.2"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "4.27.5"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin": "3.25.5"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "4.28.2"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "4.27.5"
+            },
+            {
+              "com.google.protobuf:protobuf-kotlin-lite": "3.25.5"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2024-7254",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)",
+            "Improper Validation",
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "origin": "custom",
+              "r_id": 144868,
+              "rule_id": "ZqUQ0Ay",
+              "rule_name": "ssc-5a8c5f26-fe34-42a3-8cf7-f38c071e9ae6",
+              "rv_id": 1316771,
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-5a8c5f26-fe34-42a3-8cf7-f38c071e9ae6",
+              "version_id": "nWT9wrb"
+            },
+            "src": "new-version"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-5a8c5f26-fe34-42a3-8cf7-f38c071e9ae6",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-5a8c5f26-fe34-42a3-8cf7-f38c071e9ae6",
+          "dev.semgrep.actions": []
+        },
+        "severity": "ERROR",
+        "fingerprint": "aaee9ba21d12c82be679a09dcc37a83bc2d90115be2cbe294465c13a0fbde9ecd7c6fa17b47ab8e2bac086bd2bcb5e3d50c61cb330d8727bd3a03ccdd50ecf00_0",
+        "lines": "import com.google.protobuf.InvalidProtocolBufferException;",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": true,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "semver_range": "<3.25.5"
+            },
+            "found_dependency": {
+              "package": "com.google.protobuf:protobuf-java",
+              "version": "3.12.2",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "transitive",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": []
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": true
+        },
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    }
+  ],
+  "errors": [],
+  "paths": {
+    "scanned": [
+      "all_third_party_call_pairs_all_third_party_calls.json",
+      "coverage.json",
+      "files/Laufamholzstrasse.osm.xml",
+      "files/N43E007.hgt.zip",
+      "files/N52E008.hgt.zip",
+      "files/S29W072.hgt.zip",
+      "files/andorra.osm.pbf",
+      "files/bautzen.osm",
+      "files/belarus-east.osm.gz",
+      "files/berlin-siegessaeule.osm.gz",
+      "files/campo-grande.osm.gz",
+      "files/check-swap-usage.sh",
+      "files/checkstyle.xml",
+      "files/circle-bug.osm.gz",
+      "files/edge_based_subnetwork.osm.xml.gz",
+      "files/hohe-warte.osm.gz",
+      "files/krautsand.osm.gz",
+      "files/krems.osm.gz",
+      "files/map-bug432.osm.gz",
+      "files/map-sidewalk-no.osm.gz",
+      "files/monaco.osm.gz",
+      "files/moscow.osm.gz",
+      "files/one_way_dead_end.osm.pbf",
+      "files/postgis/gh_from_a_to_b_local.sql",
+      "files/split.geo.json",
+      "files/test_simple_pturn.osm.xml",
+      "files/test_simple_turncosts.osm.xml",
+      "files/update-translations.sh",
+      "nb-configuration.xml",
+      "package-map.json",
+      "pom.xml",
+      "src/main/java/com/graphhopper/GraphHopper.java",
+      "src/main/java/com/graphhopper/GraphHopperConfig.java",
+      "src/main/java/com/graphhopper/apache/commons/collections/IntFloatBinaryHeap.java",
+      "src/main/java/com/graphhopper/apache/commons/lang3/StringUtils.java",
+      "src/main/java/com/graphhopper/coll/GHBitSet.java",
+      "src/main/java/com/graphhopper/coll/GHBitSetImpl.java",
+      "src/main/java/com/graphhopper/coll/GHIntHashSet.java",
+      "src/main/java/com/graphhopper/coll/GHIntLongHashMap.java",
+      "src/main/java/com/graphhopper/coll/GHIntObjectHashMap.java",
+      "src/main/java/com/graphhopper/coll/GHLongHashSet.java",
+      "src/main/java/com/graphhopper/coll/GHLongLongBTree.java",
+      "src/main/java/com/graphhopper/coll/GHLongLongHashMap.java",
+      "src/main/java/com/graphhopper/coll/GHLongObjectHashMap.java",
+      "src/main/java/com/graphhopper/coll/GHObjectIntHashMap.java",
+      "src/main/java/com/graphhopper/coll/GHSortedCollection.java",
+      "src/main/java/com/graphhopper/coll/GHTBitSet.java",
+      "src/main/java/com/graphhopper/coll/LongLongMap.java",
+      "src/main/java/com/graphhopper/coll/MapEntry.java",
+      "src/main/java/com/graphhopper/coll/MinHeapWithUpdate.java",
+      "src/main/java/com/graphhopper/config/CHProfile.java",
+      "src/main/java/com/graphhopper/config/LMProfile.java",
+      "src/main/java/com/graphhopper/config/Profile.java",
+      "src/main/java/com/graphhopper/debatty/java/stringsimilarity/JaroWinkler.java",
+      "src/main/java/com/graphhopper/geohash/SpatialKeyAlgo.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/ContourBuilder.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/JTSTriangulator.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/QuadEdgeAsReadableQuadEdge.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/QuadEdgeSubdivisionAsReadableTriangulation.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/ReadableQuadEdge.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/ReadableTriangulation.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/ShortestPathTree.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/Triangulation.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/TriangulationAsReadableTriangulation.java",
+      "src/main/java/com/graphhopper/isochrone/algorithm/Triangulator.java",
+      "src/main/java/com/graphhopper/reader/ReaderElement.java",
+      "src/main/java/com/graphhopper/reader/ReaderNode.java",
+      "src/main/java/com/graphhopper/reader/ReaderRelation.java",
+      "src/main/java/com/graphhopper/reader/ReaderWay.java",
+      "src/main/java/com/graphhopper/reader/dem/AbstractSRTMElevationProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/AbstractTiffElevationProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/CGIARProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/EdgeElevationInterpolator.java",
+      "src/main/java/com/graphhopper/reader/dem/EdgeElevationSmoothingMovingAverage.java",
+      "src/main/java/com/graphhopper/reader/dem/EdgeElevationSmoothingRamer.java",
+      "src/main/java/com/graphhopper/reader/dem/EdgeSampling.java",
+      "src/main/java/com/graphhopper/reader/dem/ElevationInterpolator.java",
+      "src/main/java/com/graphhopper/reader/dem/ElevationProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/GMTEDProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/HGTProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/HeightTile.java",
+      "src/main/java/com/graphhopper/reader/dem/MultiSourceElevationProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/NodeElevationInterpolator.java",
+      "src/main/java/com/graphhopper/reader/dem/SRTMGL1Provider.java",
+      "src/main/java/com/graphhopper/reader/dem/SRTMProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/SkadiProvider.java",
+      "src/main/java/com/graphhopper/reader/dem/TileBasedElevationProvider.java",
+      "src/main/java/com/graphhopper/reader/osm/GraphRestriction.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMFileHeader.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMInput.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMInputFile.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMNodeData.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMReader.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMReaderUtility.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMRestrictionException.java",
+      "src/main/java/com/graphhopper/reader/osm/OSMXMLHelper.java",
+      "src/main/java/com/graphhopper/reader/osm/Pair.java",
+      "src/main/java/com/graphhopper/reader/osm/PillarInfo.java",
+      "src/main/java/com/graphhopper/reader/osm/RestrictionConverter.java",
+      "src/main/java/com/graphhopper/reader/osm/RestrictionMembers.java",
+      "src/main/java/com/graphhopper/reader/osm/RestrictionTagParser.java",
+      "src/main/java/com/graphhopper/reader/osm/RestrictionType.java",
+      "src/main/java/com/graphhopper/reader/osm/SegmentNode.java",
+      "src/main/java/com/graphhopper/reader/osm/SkipOptions.java",
+      "src/main/java/com/graphhopper/reader/osm/Triple.java",
+      "src/main/java/com/graphhopper/reader/osm/WaySegmentParser.java",
+      "src/main/java/com/graphhopper/reader/osm/WayToEdgeConverter.java",
+      "src/main/java/com/graphhopper/reader/osm/WayToEdgesMap.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/ConditionalOSMTagInspector.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/ConditionalParser.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/ConditionalTagInspector.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/ConditionalValueParser.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/DateRange.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/DateRangeParser.java",
+      "src/main/java/com/graphhopper/reader/osm/conditional/ParsedCalendar.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfBlobDecoder.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfBlobDecoderListener.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfBlobResult.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfDecoder.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfFieldDecoder.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfRawBlob.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfReader.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/PbfStreamSplitter.java",
+      "src/main/java/com/graphhopper/reader/osm/pbf/Sink.java",
+      "src/main/java/com/graphhopper/routing/AStar.java",
+      "src/main/java/com/graphhopper/routing/AStarBidirection.java",
+      "src/main/java/com/graphhopper/routing/AStarBidirectionCH.java",
+      "src/main/java/com/graphhopper/routing/AStarBidirectionEdgeCHNoSOD.java",
+      "src/main/java/com/graphhopper/routing/AbstractBidirAlgo.java",
+      "src/main/java/com/graphhopper/routing/AbstractBidirCHAlgo.java",
+      "src/main/java/com/graphhopper/routing/AbstractBidirectionEdgeCHNoSOD.java",
+      "src/main/java/com/graphhopper/routing/AbstractNonCHBidirAlgo.java",
+      "src/main/java/com/graphhopper/routing/AbstractRoutingAlgorithm.java",
+      "src/main/java/com/graphhopper/routing/AlgorithmOptions.java",
+      "src/main/java/com/graphhopper/routing/AlternativeRoute.java",
+      "src/main/java/com/graphhopper/routing/AlternativeRouteCH.java",
+      "src/main/java/com/graphhopper/routing/AlternativeRouteEdgeCH.java",
+      "src/main/java/com/graphhopper/routing/BidirPathExtractor.java",
+      "src/main/java/com/graphhopper/routing/CHPathCalculator.java",
+      "src/main/java/com/graphhopper/routing/DefaultBidirPathExtractor.java",
+      "src/main/java/com/graphhopper/routing/DefaultWeightingFactory.java",
+      "src/main/java/com/graphhopper/routing/Dijkstra.java",
+      "src/main/java/com/graphhopper/routing/DijkstraBidirectionCH.java",
+      "src/main/java/com/graphhopper/routing/DijkstraBidirectionCHNoSOD.java",
+      "src/main/java/com/graphhopper/routing/DijkstraBidirectionEdgeCHNoSOD.java",
+      "src/main/java/com/graphhopper/routing/DijkstraBidirectionRef.java",
+      "src/main/java/com/graphhopper/routing/DijkstraOneToMany.java",
+      "src/main/java/com/graphhopper/routing/DirectionResolver.java",
+      "src/main/java/com/graphhopper/routing/DirectionResolverResult.java",
+      "src/main/java/com/graphhopper/routing/EdgeRestrictions.java",
+      "src/main/java/com/graphhopper/routing/EdgeToEdgeRoutingAlgorithm.java",
+      "src/main/java/com/graphhopper/routing/FlexiblePathCalculator.java",
+      "src/main/java/com/graphhopper/routing/HeadingResolver.java",
+      "src/main/java/com/graphhopper/routing/InstructionsFromEdges.java",
+      "src/main/java/com/graphhopper/routing/InstructionsHelper.java",
+      "src/main/java/com/graphhopper/routing/InstructionsOutgoingEdges.java",
+      "src/main/java/com/graphhopper/routing/MultiplePointsNotFoundException.java",
+      "src/main/java/com/graphhopper/routing/OSMReaderConfig.java",
+      "src/main/java/com/graphhopper/routing/Path.java",
+      "src/main/java/com/graphhopper/routing/PathCalculator.java",
+      "src/main/java/com/graphhopper/routing/PathExtractor.java",
+      "src/main/java/com/graphhopper/routing/RoundTripRouting.java",
+      "src/main/java/com/graphhopper/routing/Router.java",
+      "src/main/java/com/graphhopper/routing/RouterConfig.java",
+      "src/main/java/com/graphhopper/routing/RoutingAlgorithm.java",
+      "src/main/java/com/graphhopper/routing/RoutingAlgorithmFactory.java",
+      "src/main/java/com/graphhopper/routing/RoutingAlgorithmFactorySimple.java",
+      "src/main/java/com/graphhopper/routing/SPTEntry.java",
+      "src/main/java/com/graphhopper/routing/ViaRouting.java",
+      "src/main/java/com/graphhopper/routing/WeightingFactory.java",
+      "src/main/java/com/graphhopper/routing/ch/AStarCHEntry.java",
+      "src/main/java/com/graphhopper/routing/ch/BridgePathFinder.java",
+      "src/main/java/com/graphhopper/routing/ch/CHEntry.java",
+      "src/main/java/com/graphhopper/routing/ch/CHParameters.java",
+      "src/main/java/com/graphhopper/routing/ch/CHPreparationGraph.java",
+      "src/main/java/com/graphhopper/routing/ch/CHPreparationHandler.java",
+      "src/main/java/com/graphhopper/routing/ch/CHRoutingAlgorithmFactory.java",
+      "src/main/java/com/graphhopper/routing/ch/EdgeBasedCHBidirPathExtractor.java",
+      "src/main/java/com/graphhopper/routing/ch/EdgeBasedNodeContractor.java",
+      "src/main/java/com/graphhopper/routing/ch/EdgeBasedWitnessPathSearcher.java",
+      "src/main/java/com/graphhopper/routing/ch/NodeBasedCHBidirPathExtractor.java",
+      "src/main/java/com/graphhopper/routing/ch/NodeBasedNodeContractor.java",
+      "src/main/java/com/graphhopper/routing/ch/NodeBasedWitnessPathSearcher.java",
+      "src/main/java/com/graphhopper/routing/ch/NodeContractor.java",
+      "src/main/java/com/graphhopper/routing/ch/NodeOrderingProvider.java",
+      "src/main/java/com/graphhopper/routing/ch/OnFlyStatisticsCalculator.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareCHEntry.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareContractionHierarchies.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareEncoder.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareGraphEdgeExplorer.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareGraphEdgeIterator.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareGraphOrigEdgeExplorer.java",
+      "src/main/java/com/graphhopper/routing/ch/PrepareGraphOrigEdgeIterator.java",
+      "src/main/java/com/graphhopper/routing/ch/ShortcutUnpacker.java",
+      "src/main/java/com/graphhopper/routing/ev/ArrayEdgeIntAccess.java",
+      "src/main/java/com/graphhopper/routing/ev/AverageSlope.java",
+      "src/main/java/com/graphhopper/routing/ev/BikeNetwork.java",
+      "src/main/java/com/graphhopper/routing/ev/BooleanEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/Country.java",
+      "src/main/java/com/graphhopper/routing/ev/Crossing.java",
+      "src/main/java/com/graphhopper/routing/ev/Curvature.java",
+      "src/main/java/com/graphhopper/routing/ev/DecimalEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/DecimalEncodedValueImpl.java",
+      "src/main/java/com/graphhopper/routing/ev/DefaultEncodedValueFactory.java",
+      "src/main/java/com/graphhopper/routing/ev/EdgeIntAccess.java",
+      "src/main/java/com/graphhopper/routing/ev/EncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/EncodedValueFactory.java",
+      "src/main/java/com/graphhopper/routing/ev/EncodedValueLookup.java",
+      "src/main/java/com/graphhopper/routing/ev/EncodedValueSerializer.java",
+      "src/main/java/com/graphhopper/routing/ev/EnumEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/ExternalBooleanEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/FerrySpeed.java",
+      "src/main/java/com/graphhopper/routing/ev/FootNetwork.java",
+      "src/main/java/com/graphhopper/routing/ev/Footway.java",
+      "src/main/java/com/graphhopper/routing/ev/GetOffBike.java",
+      "src/main/java/com/graphhopper/routing/ev/Hazmat.java",
+      "src/main/java/com/graphhopper/routing/ev/HazmatTunnel.java",
+      "src/main/java/com/graphhopper/routing/ev/HazmatWater.java",
+      "src/main/java/com/graphhopper/routing/ev/Hgv.java",
+      "src/main/java/com/graphhopper/routing/ev/HikeRating.java",
+      "src/main/java/com/graphhopper/routing/ev/HorseRating.java",
+      "src/main/java/com/graphhopper/routing/ev/IntEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/IntEncodedValueImpl.java",
+      "src/main/java/com/graphhopper/routing/ev/IntsRefEdgeIntAccess.java",
+      "src/main/java/com/graphhopper/routing/ev/Lanes.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxAxleLoad.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxHeight.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxLength.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxSlope.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxSpeed.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxSpeedEstimated.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxWeight.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxWeightExcept.java",
+      "src/main/java/com/graphhopper/routing/ev/MaxWidth.java",
+      "src/main/java/com/graphhopper/routing/ev/MtbRating.java",
+      "src/main/java/com/graphhopper/routing/ev/OSMWayID.java",
+      "src/main/java/com/graphhopper/routing/ev/RoadAccess.java",
+      "src/main/java/com/graphhopper/routing/ev/RoadClass.java",
+      "src/main/java/com/graphhopper/routing/ev/RoadClassLink.java",
+      "src/main/java/com/graphhopper/routing/ev/RoadEnvironment.java",
+      "src/main/java/com/graphhopper/routing/ev/Roundabout.java",
+      "src/main/java/com/graphhopper/routing/ev/RouteNetwork.java",
+      "src/main/java/com/graphhopper/routing/ev/SimpleBooleanEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/Smoothness.java",
+      "src/main/java/com/graphhopper/routing/ev/State.java",
+      "src/main/java/com/graphhopper/routing/ev/StringEncodedValue.java",
+      "src/main/java/com/graphhopper/routing/ev/Subnetwork.java",
+      "src/main/java/com/graphhopper/routing/ev/Surface.java",
+      "src/main/java/com/graphhopper/routing/ev/Toll.java",
+      "src/main/java/com/graphhopper/routing/ev/TrackType.java",
+      "src/main/java/com/graphhopper/routing/ev/TurnCost.java",
+      "src/main/java/com/graphhopper/routing/ev/TurnRestriction.java",
+      "src/main/java/com/graphhopper/routing/ev/UrbanDensity.java",
+      "src/main/java/com/graphhopper/routing/ev/VehicleAccess.java",
+      "src/main/java/com/graphhopper/routing/ev/VehiclePriority.java",
+      "src/main/java/com/graphhopper/routing/ev/VehicleSpeed.java",
+      "src/main/java/com/graphhopper/routing/lm/LMApproximator.java",
+      "src/main/java/com/graphhopper/routing/lm/LMConfig.java",
+      "src/main/java/com/graphhopper/routing/lm/LMPreparationHandler.java",
+      "src/main/java/com/graphhopper/routing/lm/LMRoutingAlgorithmFactory.java",
+      "src/main/java/com/graphhopper/routing/lm/LandmarkStorage.java",
+      "src/main/java/com/graphhopper/routing/lm/LandmarkSuggestion.java",
+      "src/main/java/com/graphhopper/routing/lm/PerfectApproximator.java",
+      "src/main/java/com/graphhopper/routing/lm/PrepareLandmarks.java",
+      "src/main/java/com/graphhopper/routing/lm/SplitArea.java",
+      "src/main/java/com/graphhopper/routing/querygraph/EdgeChangeBuilder.java",
+      "src/main/java/com/graphhopper/routing/querygraph/QueryGraph.java",
+      "src/main/java/com/graphhopper/routing/querygraph/QueryOverlay.java",
+      "src/main/java/com/graphhopper/routing/querygraph/QueryOverlayBuilder.java",
+      "src/main/java/com/graphhopper/routing/querygraph/QueryRoutingCHGraph.java",
+      "src/main/java/com/graphhopper/routing/querygraph/VirtualEdgeIterator.java",
+      "src/main/java/com/graphhopper/routing/querygraph/VirtualEdgeIteratorState.java",
+      "src/main/java/com/graphhopper/routing/subnetwork/EdgeBasedTarjanSCC.java",
+      "src/main/java/com/graphhopper/routing/subnetwork/PrepareRoutingSubnetworks.java",
+      "src/main/java/com/graphhopper/routing/subnetwork/SubnetworkStorage.java",
+      "src/main/java/com/graphhopper/routing/subnetwork/TarjanSCC.java",
+      "src/main/java/com/graphhopper/routing/util/AccessFilter.java",
+      "src/main/java/com/graphhopper/routing/util/AllEdgesIterator.java",
+      "src/main/java/com/graphhopper/routing/util/AreaIndex.java",
+      "src/main/java/com/graphhopper/routing/util/CurvatureCalculator.java",
+      "src/main/java/com/graphhopper/routing/util/CustomArea.java",
+      "src/main/java/com/graphhopper/routing/util/DefaultSnapFilter.java",
+      "src/main/java/com/graphhopper/routing/util/DefaultVehicleEncodedValuesFactory.java",
+      "src/main/java/com/graphhopper/routing/util/DefaultVehicleTagParserFactory.java",
+      "src/main/java/com/graphhopper/routing/util/DirectedEdgeFilter.java",
+      "src/main/java/com/graphhopper/routing/util/EdgeFilter.java",
+      "src/main/java/com/graphhopper/routing/util/EncodingManager.java",
+      "src/main/java/com/graphhopper/routing/util/FerrySpeedCalculator.java",
+      "src/main/java/com/graphhopper/routing/util/FiniteWeightFilter.java",
+      "src/main/java/com/graphhopper/routing/util/HeadingEdgeFilter.java",
+      "src/main/java/com/graphhopper/routing/util/MaxSpeedCalculator.java",
+      "src/main/java/com/graphhopper/routing/util/NameSimilarityEdgeFilter.java",
+      "src/main/java/com/graphhopper/routing/util/OSMParsers.java",
+      "src/main/java/com/graphhopper/routing/util/PriorityCode.java",
+      "src/main/java/com/graphhopper/routing/util/RoadDensityCalculator.java",
+      "src/main/java/com/graphhopper/routing/util/SlopeCalculator.java",
+      "src/main/java/com/graphhopper/routing/util/SnapPreventionEdgeFilter.java",
+      "src/main/java/com/graphhopper/routing/util/TransportationMode.java",
+      "src/main/java/com/graphhopper/routing/util/TraversalMode.java",
+      "src/main/java/com/graphhopper/routing/util/UrbanDensityCalculator.java",
+      "src/main/java/com/graphhopper/routing/util/VehicleEncodedValues.java",
+      "src/main/java/com/graphhopper/routing/util/VehicleEncodedValuesFactory.java",
+      "src/main/java/com/graphhopper/routing/util/VehicleTagParserFactory.java",
+      "src/main/java/com/graphhopper/routing/util/VehicleTagParsers.java",
+      "src/main/java/com/graphhopper/routing/util/WayAccess.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/CountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/CountryRuleFactory.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/AlbaniaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/AndorraCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/AustriaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/BelarusCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/BelgiumCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/BosniaHerzegovinaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/BulgariaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/CroatiaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/CzechiaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/DenmarkCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/EstoniaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/FaroeIslandsCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/FinlandCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/FranceCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/GermanyCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/GibraltarCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/GreeceCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/GuernseyCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/HungaryCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/IcelandCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/IrelandCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/IsleOfManCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/ItalyCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/JerseyCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/LatviaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/LiechtensteinCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/LithuaniaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/LuxembourgCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/MaltaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/MoldovaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/MonacoCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/MontenegroCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/NetherlandsCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/NorthMacedoniaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/NorwayCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/PolandCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/PortugalCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/RomaniaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/RomaniaSpatialRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/RussiaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SanMarinoCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SerbiaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SlovakiaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SloveniaCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SpainCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SwedenCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/SwitzerlandCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/UkraineCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/UnitedKingdomCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/countryrules/europe/VaticanCityCountryRule.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/AbstractAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/AbstractAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/BikeAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/BikeAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/BikeCommonAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/BikeCommonAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/BikeCommonPriorityParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/BikePriorityParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/CarAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/CarAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/CountryParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/DefaultMaxSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/DefaultTagParserFactory.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/FootAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/FootAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/FootPriorityParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/MaxWeightExceptParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/MountainBikeAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/MountainBikeAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/MountainBikePriorityParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMBikeNetworkTagParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMCrossingParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMFootNetworkTagParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMFootwayParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMGetOffBikeParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMHazmatParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMHazmatTunnelParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMHazmatWaterParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMHgvParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMHikeRatingParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMHorseRatingParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMLanesParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMaxAxleLoadParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMaxHeightParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMaxLengthParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMaxSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMaxWeightParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMaxWidthParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMMtbRatingParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMRoadAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMRoadClassLinkParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMRoadClassParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMRoadEnvironmentParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMRoundaboutParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMSmoothnessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMSurfaceParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMTollParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMTrackTypeParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/OSMWayIDParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RacingBikeAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RacingBikeAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RacingBikePriorityParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RelationTagParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RestrictionSetter.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RoadsAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/RoadsAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/StateParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/TagParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/TagParserFactory.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/WheelchairAccessParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/WheelchairAverageSpeedParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/WheelchairPriorityParser.java",
+      "src/main/java/com/graphhopper/routing/util/parsers/helpers/OSMValueExtractor.java",
+      "src/main/java/com/graphhopper/routing/util/tour/MultiPointTour.java",
+      "src/main/java/com/graphhopper/routing/util/tour/SinglePointTour.java",
+      "src/main/java/com/graphhopper/routing/util/tour/TourStrategy.java",
+      "src/main/java/com/graphhopper/routing/weighting/AbstractAdjustedWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/AbstractWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/AvoidEdgesWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/BalancedWeightApproximator.java",
+      "src/main/java/com/graphhopper/routing/weighting/BeelineWeightApproximator.java",
+      "src/main/java/com/graphhopper/routing/weighting/DefaultTurnCostProvider.java",
+      "src/main/java/com/graphhopper/routing/weighting/FastestWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/QueryGraphWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/ShortestWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/SpeedWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/TurnCostProvider.java",
+      "src/main/java/com/graphhopper/routing/weighting/WeightApproximator.java",
+      "src/main/java/com/graphhopper/routing/weighting/Weighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/ConditionalExpressionVisitor.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/CustomModelParser.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/CustomWeighting.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/CustomWeightingHelper.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/FindMinMax.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/NameValidator.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/ParseResult.java",
+      "src/main/java/com/graphhopper/routing/weighting/custom/ValueExpressionVisitor.java",
+      "src/main/java/com/graphhopper/search/KVStorage.java",
+      "src/main/java/com/graphhopper/storage/AbstractDataAccess.java",
+      "src/main/java/com/graphhopper/storage/BaseGraph.java",
+      "src/main/java/com/graphhopper/storage/BaseGraphNodesAndEdges.java",
+      "src/main/java/com/graphhopper/storage/CHConfig.java",
+      "src/main/java/com/graphhopper/storage/CHEdgeFilter.java",
+      "src/main/java/com/graphhopper/storage/CHStorage.java",
+      "src/main/java/com/graphhopper/storage/CHStorageBuilder.java",
+      "src/main/java/com/graphhopper/storage/DAType.java",
+      "src/main/java/com/graphhopper/storage/DataAccess.java",
+      "src/main/java/com/graphhopper/storage/Directory.java",
+      "src/main/java/com/graphhopper/storage/ExtendedNodeAccess.java",
+      "src/main/java/com/graphhopper/storage/GHDirectory.java",
+      "src/main/java/com/graphhopper/storage/GHLock.java",
+      "src/main/java/com/graphhopper/storage/GHNodeAccess.java",
+      "src/main/java/com/graphhopper/storage/Graph.java",
+      "src/main/java/com/graphhopper/storage/IntsRef.java",
+      "src/main/java/com/graphhopper/storage/LockFactory.java",
+      "src/main/java/com/graphhopper/storage/MMapDataAccess.java",
+      "src/main/java/com/graphhopper/storage/MMapDirectory.java",
+      "src/main/java/com/graphhopper/storage/NativeFSLockFactory.java",
+      "src/main/java/com/graphhopper/storage/NodeAccess.java",
+      "src/main/java/com/graphhopper/storage/RAMDataAccess.java",
+      "src/main/java/com/graphhopper/storage/RAMDirectory.java",
+      "src/main/java/com/graphhopper/storage/RAMIntDataAccess.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHEdgeExplorer.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHEdgeIterator.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHEdgeIteratorImpl.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHEdgeIteratorState.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHEdgeIteratorStateImpl.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHGraph.java",
+      "src/main/java/com/graphhopper/storage/RoutingCHGraphImpl.java",
+      "src/main/java/com/graphhopper/storage/SimpleFSLockFactory.java",
+      "src/main/java/com/graphhopper/storage/Storable.java",
+      "src/main/java/com/graphhopper/storage/StorableProperties.java",
+      "src/main/java/com/graphhopper/storage/TurnCostStorage.java",
+      "src/main/java/com/graphhopper/storage/VLongStorage.java",
+      "src/main/java/com/graphhopper/storage/index/InMemConstructionIndex.java",
+      "src/main/java/com/graphhopper/storage/index/IndexStructureInfo.java",
+      "src/main/java/com/graphhopper/storage/index/LineIntIndex.java",
+      "src/main/java/com/graphhopper/storage/index/LocationIndex.java",
+      "src/main/java/com/graphhopper/storage/index/LocationIndexTree.java",
+      "src/main/java/com/graphhopper/storage/index/PixelGridTraversal.java",
+      "src/main/java/com/graphhopper/storage/index/Snap.java",
+      "src/main/java/com/graphhopper/util/AngleCalc.java",
+      "src/main/java/com/graphhopper/util/ArrayUtil.java",
+      "src/main/java/com/graphhopper/util/BitUtil.java",
+      "src/main/java/com/graphhopper/util/BreadthFirstSearch.java",
+      "src/main/java/com/graphhopper/util/Constants.java",
+      "src/main/java/com/graphhopper/util/DepthFirstSearch.java",
+      "src/main/java/com/graphhopper/util/DistanceCalc.java",
+      "src/main/java/com/graphhopper/util/DistanceCalc3D.java",
+      "src/main/java/com/graphhopper/util/DistanceCalcEarth.java",
+      "src/main/java/com/graphhopper/util/DistanceCalcEuclidean.java",
+      "src/main/java/com/graphhopper/util/DistancePlaneProjection.java",
+      "src/main/java/com/graphhopper/util/Downloader.java",
+      "src/main/java/com/graphhopper/util/EdgeExplorer.java",
+      "src/main/java/com/graphhopper/util/EdgeIterator.java",
+      "src/main/java/com/graphhopper/util/EdgeIteratorState.java",
+      "src/main/java/com/graphhopper/util/FetchMode.java",
+      "src/main/java/com/graphhopper/util/GHUtility.java",
+      "src/main/java/com/graphhopper/util/GitInfo.java",
+      "src/main/java/com/graphhopper/util/Instructions.java",
+      "src/main/java/com/graphhopper/util/MiniPerfTest.java",
+      "src/main/java/com/graphhopper/util/PathMerger.java",
+      "src/main/java/com/graphhopper/util/PathSimplification.java",
+      "src/main/java/com/graphhopper/util/RamerDouglasPeucker.java",
+      "src/main/java/com/graphhopper/util/SimpleIntDeque.java",
+      "src/main/java/com/graphhopper/util/StopWatch.java",
+      "src/main/java/com/graphhopper/util/TranslationMap.java",
+      "src/main/java/com/graphhopper/util/Unzipper.java",
+      "src/main/java/com/graphhopper/util/XFirstSearch.java",
+      "src/main/java/com/graphhopper/util/details/AbstractPathDetailsBuilder.java",
+      "src/main/java/com/graphhopper/util/details/AverageSpeedDetails.java",
+      "src/main/java/com/graphhopper/util/details/BooleanDetails.java",
+      "src/main/java/com/graphhopper/util/details/ConstantDetailsBuilder.java",
+      "src/main/java/com/graphhopper/util/details/DecimalDetails.java",
+      "src/main/java/com/graphhopper/util/details/DistanceDetails.java",
+      "src/main/java/com/graphhopper/util/details/EdgeIdDetails.java",
+      "src/main/java/com/graphhopper/util/details/EdgeKeyDetails.java",
+      "src/main/java/com/graphhopper/util/details/EnumDetails.java",
+      "src/main/java/com/graphhopper/util/details/IntDetails.java",
+      "src/main/java/com/graphhopper/util/details/IntersectionDetails.java",
+      "src/main/java/com/graphhopper/util/details/KVStringDetails.java",
+      "src/main/java/com/graphhopper/util/details/PathDetailsBuilder.java",
+      "src/main/java/com/graphhopper/util/details/PathDetailsBuilderFactory.java",
+      "src/main/java/com/graphhopper/util/details/PathDetailsFromEdges.java",
+      "src/main/java/com/graphhopper/util/details/StringDetails.java",
+      "src/main/java/com/graphhopper/util/details/TimeDetails.java",
+      "src/main/java/com/graphhopper/util/details/WeightDetails.java",
+      "src/main/java/com/graphhopper/util/shapes/BBox.java",
+      "src/main/java/com/graphhopper/util/shapes/Circle.java",
+      "src/main/java/com/graphhopper/util/shapes/Polygon.java",
+      "src/main/java/com/graphhopper/util/shapes/Shape.java",
+      "src/main/resources/com/graphhopper/builddate",
+      "src/main/resources/com/graphhopper/countries/countries.geojson",
+      "src/main/resources/com/graphhopper/custom_models/bike.json",
+      "src/main/resources/com/graphhopper/custom_models/bike_elevation.json",
+      "src/main/resources/com/graphhopper/custom_models/bus.json",
+      "src/main/resources/com/graphhopper/custom_models/car4wd.json",
+      "src/main/resources/com/graphhopper/custom_models/cargo_bike.json",
+      "src/main/resources/com/graphhopper/custom_models/curvature.json",
+      "src/main/resources/com/graphhopper/custom_models/foot_elevation.json",
+      "src/main/resources/com/graphhopper/custom_models/hike.json",
+      "src/main/resources/com/graphhopper/custom_models/motorcycle.json",
+      "src/main/resources/com/graphhopper/custom_models/truck.json",
+      "src/main/resources/com/graphhopper/gitinfo",
+      "src/main/resources/com/graphhopper/reader/dem/Africa_names.txt",
+      "src/main/resources/com/graphhopper/reader/dem/Australia_names.txt",
+      "src/main/resources/com/graphhopper/reader/dem/Eurasia_names.txt",
+      "src/main/resources/com/graphhopper/reader/dem/Islands_names.txt",
+      "src/main/resources/com/graphhopper/reader/dem/North_America_names.txt",
+      "src/main/resources/com/graphhopper/reader/dem/South_America_names.txt",
+      "src/main/resources/com/graphhopper/routing/lm/map.geo.json",
+      "src/main/resources/com/graphhopper/routing/util/legal_default_speeds.json",
+      "src/main/resources/com/graphhopper/util/ar.txt",
+      "src/main/resources/com/graphhopper/util/ast.txt",
+      "src/main/resources/com/graphhopper/util/az.txt",
+      "src/main/resources/com/graphhopper/util/bg.txt",
+      "src/main/resources/com/graphhopper/util/bn_BN.txt",
+      "src/main/resources/com/graphhopper/util/ca.txt",
+      "src/main/resources/com/graphhopper/util/cs_CZ.txt",
+      "src/main/resources/com/graphhopper/util/da_DK.txt",
+      "src/main/resources/com/graphhopper/util/de_DE.txt",
+      "src/main/resources/com/graphhopper/util/el.txt",
+      "src/main/resources/com/graphhopper/util/en_US.txt",
+      "src/main/resources/com/graphhopper/util/eo.txt",
+      "src/main/resources/com/graphhopper/util/es.txt",
+      "src/main/resources/com/graphhopper/util/fa.txt",
+      "src/main/resources/com/graphhopper/util/fi.txt",
+      "src/main/resources/com/graphhopper/util/fil.txt",
+      "src/main/resources/com/graphhopper/util/fr_CH.txt",
+      "src/main/resources/com/graphhopper/util/fr_FR.txt",
+      "src/main/resources/com/graphhopper/util/gl.txt",
+      "src/main/resources/com/graphhopper/util/he.txt",
+      "src/main/resources/com/graphhopper/util/hr_HR.txt",
+      "src/main/resources/com/graphhopper/util/hsb.txt",
+      "src/main/resources/com/graphhopper/util/hu_HU.txt",
+      "src/main/resources/com/graphhopper/util/in_ID.txt",
+      "src/main/resources/com/graphhopper/util/it.txt",
+      "src/main/resources/com/graphhopper/util/ja.txt",
+      "src/main/resources/com/graphhopper/util/ko.txt",
+      "src/main/resources/com/graphhopper/util/kz.txt",
+      "src/main/resources/com/graphhopper/util/lt_LT.txt",
+      "src/main/resources/com/graphhopper/util/nb_NO.txt",
+      "src/main/resources/com/graphhopper/util/ne.txt",
+      "src/main/resources/com/graphhopper/util/nl.txt",
+      "src/main/resources/com/graphhopper/util/pl_PL.txt",
+      "src/main/resources/com/graphhopper/util/pt_BR.txt",
+      "src/main/resources/com/graphhopper/util/pt_PT.txt",
+      "src/main/resources/com/graphhopper/util/ro.txt",
+      "src/main/resources/com/graphhopper/util/ru.txt",
+      "src/main/resources/com/graphhopper/util/sk.txt",
+      "src/main/resources/com/graphhopper/util/sl_SI.txt",
+      "src/main/resources/com/graphhopper/util/sr_RS.txt",
+      "src/main/resources/com/graphhopper/util/sv_SE.txt",
+      "src/main/resources/com/graphhopper/util/tr.txt",
+      "src/main/resources/com/graphhopper/util/uk.txt",
+      "src/main/resources/com/graphhopper/util/uz.txt",
+      "src/main/resources/com/graphhopper/util/vi_VN.txt",
+      "src/main/resources/com/graphhopper/util/zh_CN.txt",
+      "src/main/resources/com/graphhopper/util/zh_HK.txt",
+      "src/main/resources/com/graphhopper/util/zh_TW.txt",
+      "src/main/resources/com/graphhopper/version",
+      "third_party_apis_skipped_paths.json"
+    ]
+  },
+  "time": {
+    "rules": [],
+    "rules_parse_time": 9.851233005523682,
+    "profiling_times": {
+      "config_time": 48.04047107696533,
+      "core_time": 36.41302013397217,
+      "ignores_time": 0.20277714729309082,
+      "total_time": 84.69898390769958
+    },
+    "parsing_time": {
+      "total_time": 0.0,
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "scanning_time": {
+      "total_time": 0.0,
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "matching_time": {
+      "total_time": 0.0,
+      "per_file_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_files": []
+    },
+    "tainting_time": {
+      "total_time": 0.0,
+      "per_def_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_defs": []
+    },
+    "fixpoint_timeouts": [
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/com/graphhopper/routing/weighting/custom/CustomModelParser.java:279:26 [rules: 4, first: java.spring.security.injection.tainted-system-command.tainted-system-command]",
+        "location": {
+          "path": "src/main/java/com/graphhopper/routing/weighting/custom/CustomModelParser.java",
+          "start": {
+            "line": 279,
+            "col": 27,
+            "offset": 16909
+          },
+          "end": {
+            "line": 279,
+            "col": 46,
+            "offset": 16928
+          }
+        }
+      }
+    ],
+    "prefiltering": {
+      "project_level_time": 0.0,
+      "file_level_time": 0.0,
+      "rules_with_project_prefilters_ratio": 0.0,
+      "rules_with_file_prefilters_ratio": 0.0,
+      "rules_selected_ratio": 0.0,
+      "rules_matched_ratio": 0.0
+    },
+    "targets": [],
+    "total_bytes": 0,
+    "max_memory_bytes": 14252016384
+  },
+  "engine_requested": "PRO",
+  "interfile_languages_used": [],
+  "skipped_rules": [],
+  "subprojects": [
+    {
+      "dependency_sources": [
+        "pom.xml"
+      ],
+      "resolved": true,
+      "resolved_stats": {
+        "resolution_method": "DynamicResolution",
+        "dependency_count": 36,
+        "ecosystem": "maven"
+      }
+    }
+  ],
+  "profiling_results": []
+}

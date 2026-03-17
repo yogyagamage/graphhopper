@@ -3,13 +3,9 @@
   "covered" : false,
   "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.<init>(java.util.List, boolean, com.google.protobuf.AbstractMessage$BuilderParent, boolean)"
 }, {
-  "caller" : "com.graphhopper.http.GHLocationParam.<init>(java.lang.String)",
+  "caller" : "com.graphhopper.http.GHLocationParam.<init>(java.lang.String, java.lang.String)",
   "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Value.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)"
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
 }, {
   "caller" : "com.graphhopper.http.IllegalArgumentExceptionMapper.toResponse(java.lang.IllegalArgumentException)",
   "covered" : false,
@@ -20,8 +16,16 @@
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
 }, {
   "caller" : "com.graphhopper.http.IllegalArgumentExceptionMapper.toResponse(java.lang.IllegalArgumentException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeConfiguration.<init>()",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.client.HttpClientConfiguration.<init>()"
 }, {
   "caller" : "com.graphhopper.resources.RouteResource.doPost(com.graphhopper.GHRequest, javax.servlet.http.HttpServletRequest)",
   "covered" : false,
@@ -48,15 +52,47 @@
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.type(java.lang.String)"
 }, {
   "caller" : "com.graphhopper.resources.RouteResource.doPost(com.graphhopper.GHRequest, javax.servlet.http.HttpServletRequest)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, javax.ws.rs.core.MediaType)"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.fromResponse(javax.ws.rs.core.Response)"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.<init>()"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.translate(double, double)"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.scale(double, double)"
 }, {
   "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
   "covered" : false,
   "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
 }, {
   "caller" : "vector_tile.VectorTile.Tile.Builder.mergeFrom(vector_tile.VectorTile$Tile)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.isEmpty()"
 }, {
   "caller" : "vector_tile.VectorTile.Tile.Builder.mergeFrom(vector_tile.VectorTile$Tile)",
@@ -67,61 +103,117 @@
   "covered" : false,
   "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addAllMessages(java.lang.Iterable)"
 }, {
-  "caller" : "com.graphhopper.http.GHPointParam.<init>(java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.<init>(int, int, boolean, boolean, double)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
 }, {
-  "caller" : "com.graphhopper.resources.RouteResource.initHints(com.graphhopper.util.PMap, javax.ws.rs.core.MultivaluedMap)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.entrySet()"
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.<init>(int, int, boolean, boolean, double)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getEnvelopeInternal()"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.<init>(int, int, boolean, boolean, double)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometryFactory.prepare(org.locationtech.jts.geom.Geometry)"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.getUriInfo()"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getPath()"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getRequestUriBuilder()"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriBuilder.replacePath(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriBuilder.replaceQueryParam(java.lang.String, java.lang.Object[])"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriBuilder.build(java.lang.Object[])"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.setRequestUri(java.net.URI)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.jackson.Jackson.newMinimalObjectMapper()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
   "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.setup.Bootstrap.setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.setup.Bootstrap.getObjectMapper()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.datatype.jdk8.Jdk8Module.<init>()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.util.StdDateFormat.<init>()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.setDateFormat(java.text.DateFormat)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.enable(com.fasterxml.jackson.databind.MapperFeature[])"
+}, {
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
+  "covered" : true,
   "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.createObjectNode()"
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.servlet.http.HttpServletRequest.getRemoteAddr()"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, long)"
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.servlet.http.HttpServletRequest.getLocale()"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, java.lang.String)"
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.servlet.http.HttpServletRequest.getHeader(java.lang.String)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, int)"
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.status(javax.ws.rs.core.Response$Status)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putPOJO(java.lang.String, java.lang.Object)"
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.toString()"
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.type(java.lang.String)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
   "covered" : false,
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.num2deg(int, int, int)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
 }, {
   "caller" : "com.graphhopper.http.MultiExceptionMapper.toResponse(com.graphhopper.jackson.MultiException)",
   "covered" : false,
@@ -132,23 +224,27 @@
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
 }, {
   "caller" : "com.graphhopper.http.MultiExceptionMapper.toResponse(com.graphhopper.jackson.MultiException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
 }, {
-  "caller" : "vector_tile.VectorTile.Tile.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)"
+  "caller" : "com.graphhopper.http.PtRedirectFilter.shouldRedirect(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
+}, {
+  "caller" : "com.graphhopper.http.PtRedirectFilter.shouldRedirect(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.getFirst(java.lang.Object)"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "io.dropwizard.jersey.validation.JerseyViolationException.getMessage()"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "io.dropwizard.jersey.validation.JerseyViolationException.getConstraintViolations()"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "io.dropwizard.jersey.validation.JerseyViolationException.getInvocable()"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
@@ -156,7 +252,7 @@
   "thirdPartyMethod" : "io.dropwizard.jersey.validation.ConstraintMessage.determineStatus(java.util.Set, org.glassfish.jersey.server.model.Invocable)"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "javax.ws.rs.core.Response.status(int)"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
@@ -168,15 +264,35 @@
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
 }, {
   "caller" : "com.graphhopper.http.GHJerseyViolationExceptionMapper.toResponse(io.dropwizard.jersey.validation.JerseyViolationException)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
 }, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiPolygon)",
+  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.getUriInfo()"
+}, {
+  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
+}, {
+  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
   "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.getFirst(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.getHeaders()"
+}, {
+  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.putSingle(java.lang.Object, java.lang.Object)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiPolygon)",
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getNumGeometries()"
 }, {
   "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiPolygon)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getGeometryN(int)"
 }, {
   "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.fetchFeedsAndCreateGraph()",
@@ -203,68 +319,44 @@
   "covered" : false,
   "thirdPartyMethod" : "com.google.common.util.concurrent.ListenableFutureTask.create(java.util.concurrent.Callable)"
 }, {
-  "caller" : "vector_tile.VectorTile.Tile.Value.<init>()",
-  "covered" : false,
+  "caller" : "vector_tile.VectorTile.Tile.Layer.<init>()",
+  "covered" : true,
   "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>()"
 }, {
-  "caller" : "vector_tile.VectorTile.Tile.Feature.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.<init>()"
+  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.newBuilder()"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getNumGeometries()"
+  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.maximumSize(long)"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
+  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
   "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getGeometryN(int)"
+  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.refreshAfterWrite(long, java.util.concurrent.TimeUnit)"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
+  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
   "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.contains(org.locationtech.jts.geom.Geometry)"
+  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.build(com.google.common.cache.CacheLoader)"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getNumPoints()"
+  "caller" : "vector_tile.VectorTile.Tile.Feature.Builder.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.Builder.<init>()"
 }, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
+  "caller" : "com.graphhopper.http.RealtimeBundle.<init>(com.graphhopper.http.RealtimeBundle, org.apache.http.client.HttpClient, com.graphhopper.http.RealtimeBundleConfiguration)",
   "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getExteriorRing()"
+  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
 }, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.LineString.getCoordinates()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.algorithm.Area.ofRingSigned(org.locationtech.jts.geom.Coordinate[])"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.LineString.reverse()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getNumInteriorRing()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getInteriorRingN(int)"
-}, {
-  "caller" : "com.graphhopper.http.OffsetDateTimeParam.<init>(java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.http.DurationParam.<init>(java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
+  "caller" : "vector_tile.VectorTile.Tile.Layer.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
 }, {
   "caller" : "no.ecc.vectortile.VectorTileDecoder.decodeGeometry(org.locationtech.jts.geom.GeometryFactory, vector_tile.VectorTile$Tile$GeomType, java.util.List, double)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(org.locationtech.jts.geom.Coordinate)"
 }, {
   "caller" : "no.ecc.vectortile.VectorTileDecoder.decodeGeometry(org.locationtech.jts.geom.GeometryFactory, vector_tile.VectorTile$Tile$GeomType, java.util.List, double)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
 }, {
   "caller" : "no.ecc.vectortile.VectorTileDecoder.decodeGeometry(org.locationtech.jts.geom.GeometryFactory, vector_tile.VectorTile$Tile$GeomType, java.util.List, double)",
@@ -307,481 +399,53 @@
   "covered" : false,
   "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createGeometryCollection(org.locationtech.jts.geom.Geometry[])"
 }, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.setup.Environment.jersey()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.setup.JerseyEnvironment.register(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.setup.Environment.lifecycle()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.lifecycle.setup.LifecycleEnvironment.manage(io.dropwizard.lifecycle.Managed)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.setup.JerseyEnvironment.register(java.lang.Class)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.setup.Environment.healthChecks()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheckRegistry.register(java.lang.String, com.codahale.metrics.health.HealthCheck)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Builder.buildPartial()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.build()"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.shouldRedirect(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.getUriInfo()"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.shouldRedirect(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.shouldRedirect(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.getFirst(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.gpxSuccessResponseBuilder(com.graphhopper.GHResponse, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.gpxSuccessResponseBuilder(com.graphhopper.GHResponse, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Builder.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Value.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
-}, {
   "caller" : "com.graphhopper.http.DurationParam.<init>(java.lang.String)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
 }, {
-  "caller" : "vector_tile.VectorTile.Tile.Value.Builder.<init>()",
+  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
   "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.<init>()"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getNumGeometries()"
 }, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.<clinit>()",
+  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.MediaType.<init>(java.lang.String, java.lang.String)"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getGeometryN(int)"
 }, {
-  "caller" : "vector_tile.VectorTile.Tile.Feature.<init>(com.google.protobuf.GeneratedMessageV3$Builder)",
+  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
   "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.<init>(com.google.protobuf.GeneratedMessageV3$Builder)"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.contains(org.locationtech.jts.geom.Geometry)"
 }, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.<init>(com.graphhopper.http.RealtimeBundle)",
+  "caller" : "com.graphhopper.resources.IsochroneResource.heuristicallyFindMainConnectedComponent(org.locationtech.jts.geom.MultiPolygon, org.locationtech.jts.geom.Point)",
   "covered" : false,
-  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getNumPoints()"
 }, {
-  "caller" : "com.graphhopper.resources.InfoResource.getInfo()",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.<init>(double, double, double, double)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Feature.Builder.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.Builder.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.servlet.http.HttpServletRequest.getRemoteAddr()"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.servlet.http.HttpServletRequest.getLocale()"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.servlet.http.HttpServletRequest.getHeader(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.status(javax.ws.rs.core.Response$Status)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.type(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.RouteResource.doGet(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, double, java.lang.Double, java.util.List, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.util.List, java.util.List, java.util.List, java.util.List, java.util.List, boolean, boolean, boolean, java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.<init>(com.graphhopper.http.GraphHopperBundle, com.graphhopper.http.GraphHopperBundleConfiguration, com.graphhopper.GraphHopper)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.addValues(vector_tile.VectorTile$Tile$Value)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)"
-}, {
-  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheckRegistry.runHealthChecks()"
-}, {
-  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheck.Result.isHealthy()"
-}, {
-  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.status(int)"
-}, {
-  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
-}, {
-  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.MVTResource.num2deg(int, int, int)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.encode()",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.simplify.DouglasPeuckerSimplifier.simplify(org.locationtech.jts.geom.Geometry, double)"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.encode()",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.isEmpty()"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.newBuilder()"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.maximumSize(long)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.refreshAfterWrite(long, java.util.concurrent.TimeUnit)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.common.cache.CacheBuilder.build(com.google.common.cache.CacheLoader)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Feature.Builder.addAllTags(java.lang.Iterable)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.AbstractMessageLite.Builder.addAll(java.lang.Iterable, java.util.List)"
-}, {
-  "caller" : "com.graphhopper.http.GHLocationParam.<init>(java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Builder.addLayers(vector_tile.VectorTile$Tile$Layer)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)"
-}, {
-  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
-}, {
-  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.type(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getFactory()"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPoint(org.locationtech.jts.geom.Coordinate)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getExteriorRing()"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.LinearRing)"
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.LineString.getCoordinates()"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.JsonNodeFactory.objectNode()"
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.algorithm.Area.ofRingSigned(org.locationtech.jts.geom.Coordinate[])"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, java.lang.String)"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.LineString.reverse()"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putPOJO(java.lang.String, java.lang.Object)"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getNumInteriorRing()"
 }, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Polygon)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putObject(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, int)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.<init>()"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.translate(double, double)"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.scale(double, double)"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, javax.ws.rs.core.MediaType)"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
-}, {
-  "caller" : "com.graphhopper.http.GHPointParam.<init>(java.lang.String, java.lang.String)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Feature.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jackson.Jackson.newMinimalObjectMapper()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.setup.Bootstrap.setObjectMapper(com.fasterxml.jackson.databind.ObjectMapper)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.setup.Bootstrap.getObjectMapper()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.datatype.jdk8.Jdk8Module.<init>()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.registerModule(com.fasterxml.jackson.databind.Module)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.util.StdDateFormat.<init>()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.setDateFormat(java.text.DateFormat)"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.initialize(io.dropwizard.setup.Bootstrap)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.enable(com.fasterxml.jackson.databind.MapperFeature[])"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getInteriorRingN(int)"
 }, {
   "caller" : "no.ecc.vectortile.VectorTileEncoder.isValid(org.locationtech.jts.geom.Geometry)",
-  "covered" : false,
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.isValid()"
-}, {
-  "caller" : "com.graphhopper.http.GraphHopperBundle.<init>(com.graphhopper.http.GraphHopperBundle, com.graphhopper.http.GraphHopperBundleConfiguration)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.<init>()"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getPath()"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getRequestUriBuilder()"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriBuilder.replacePath(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriBuilder.replaceQueryParam(java.lang.String, java.lang.Object[])"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.UriBuilder.build(java.lang.Object[])"
-}, {
-  "caller" : "com.graphhopper.http.PtRedirectFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.setRequestUri(java.net.URI)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.addFeatures(vector_tile.VectorTile$Tile$Feature)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeConfiguration.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.client.HttpClientConfiguration.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.buildPartial()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.build()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.buildPartial()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.LazyStringList.getUnmodifiableView()"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.<init>(com.graphhopper.http.RealtimeFeedLoadingCache)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.common.cache.CacheLoader.<init>()"
-}, {
-  "caller" : "com.graphhopper.resources.MVTResource.<clinit>()",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.MediaType.<init>(java.lang.String, java.lang.String)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addAllMessages(java.lang.Iterable)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.LazyStringList.isEmpty()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.LazyStringList.addAll(java.util.Collection)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.isEmpty()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.dispose()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.<init>(int, int, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.<init>(int, int, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getEnvelopeInternal()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.<init>(int, int, boolean, boolean, double)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.prep.PreparedGeometryFactory.prepare(org.locationtech.jts.geom.Geometry)"
-}, {
-  "caller" : "com.graphhopper.http.health.GraphHopperHealthCheck.<init>(com.graphhopper.GraphHopper)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheck.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.addAllKeys(java.lang.Iterable)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.AbstractMessageLite.Builder.addAll(java.lang.Iterable, java.util.List)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.setup.Environment.jersey()"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.setup.JerseyEnvironment.register(java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.client.HttpClientBuilder.<init>(io.dropwizard.setup.Environment)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.client.HttpClientBuilder.using(io.dropwizard.client.HttpClientConfiguration)"
-}, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
-  "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.client.HttpClientBuilder.build(java.lang.String)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.ensureKeysIsMutable()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.LazyStringArrayList.<init>(com.google.protobuf.LazyStringList)"
-}, {
-  "caller" : "com.graphhopper.resources.PtMVTResource.<init>(com.graphhopper.GraphHopper, com.graphhopper.gtfs.GtfsStorage)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
 }, {
   "caller" : "com.graphhopper.resources.PtIsochroneResource.doGet(com.graphhopper.http.GHLocationParam, long, boolean, com.graphhopper.http.OffsetDateTimeParam, int, java.lang.String)",
   "covered" : false,
@@ -863,163 +527,499 @@
   "covered" : false,
   "thirdPartyMethod" : "org.locationtech.jts.geom.LineSegment.toGeometry(org.locationtech.jts.geom.GeometryFactory)"
 }, {
-  "caller" : "com.graphhopper.http.CORSFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.servlet.http.HttpServletResponse.setHeader(java.lang.String, java.lang.String)"
+  "caller" : "com.graphhopper.http.OffsetDateTimeParam.<init>(java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
 }, {
-  "caller" : "com.graphhopper.http.CORSFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)",
+  "caller" : "com.graphhopper.http.GHPointParam.<init>(java.lang.String, java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Builder.buildPartial()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.build()"
+}, {
+  "caller" : "com.graphhopper.http.health.GraphHopperHealthCheck.<init>(com.graphhopper.GraphHopper)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheck.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>()"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.<clinit>()",
   "covered" : false,
-  "thirdPartyMethod" : "javax.servlet.FilterChain.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse)"
+  "thirdPartyMethod" : "javax.ws.rs.core.MediaType.<init>(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeBundle.<init>(com.graphhopper.http.RealtimeBundle)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Value.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Value.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>()"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.setup.Environment.jersey()"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.jersey.setup.JerseyEnvironment.register(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.client.HttpClientBuilder.<init>(io.dropwizard.setup.Environment)"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.client.HttpClientBuilder.using(io.dropwizard.client.HttpClientConfiguration)"
+}, {
+  "caller" : "com.graphhopper.http.RealtimeBundle.run(com.graphhopper.http.RealtimeBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.client.HttpClientBuilder.build(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.InfoResource.getInfo()",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Envelope.<init>(double, double, double, double)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.<init>(com.graphhopper.http.GraphHopperBundle, com.graphhopper.http.GraphHopperBundleConfiguration)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.addValues(vector_tile.VectorTile$Tile$Value)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)"
+}, {
+  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheckRegistry.runHealthChecks()"
+}, {
+  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheck.Result.isHealthy()"
+}, {
+  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.status(int)"
+}, {
+  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.entity(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "com.graphhopper.resources.HealthCheckResource.doGet()",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.http.OffsetDateTimeParam.<init>(java.lang.String, java.lang.String)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.http.GHPointParam.<init>(java.lang.String)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Feature.Builder.addAllTags(java.lang.Iterable)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.AbstractMessageLite.Builder.addAll(java.lang.Iterable, java.util.List)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Builder.addLayers(vector_tile.VectorTile$Tile$Layer)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)"
+}, {
+  "caller" : "com.graphhopper.http.GHLocationParam.<init>(java.lang.String)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.MVTResource.num2deg(int, int, int)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Value.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Feature.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
 }, {
   "caller" : "vector_tile.VectorTile.Tile.Feature.<init>()",
   "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.<init>()"
 }, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "caller" : "vector_tile.VectorTile.Tile.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, javax.ws.rs.core.MediaType)"
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>(com.google.protobuf.GeneratedMessageV3$ExtendableBuilder)"
 }, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
 }, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.fromResponse(javax.ws.rs.core.Response)"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiPolygon.getFactory()"
 }, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
-}, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.<init>()"
-}, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.translate(double, double)"
-}, {
-  "caller" : "com.graphhopper.resources.MVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.lang.Boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.scale(double, double)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Layer.<init>()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableMessage.<init>()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Geometry)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getCoordinates()"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Value.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiLineString)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiLineString.getNumGeometries()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiLineString)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiLineString.getGeometryN(int)"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiLineString)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getCoordinates()"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.createTileEnvelope(int, int)",
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
   "covered" : false,
   "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
 }, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.createTileEnvelope(int, int)",
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
   "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPoint(org.locationtech.jts.geom.Coordinate)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Polygon.getExteriorRing()"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.LinearRing)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.JsonNodeFactory.objectNode()"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putPOJO(java.lang.String, java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putObject(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, int)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.IsochroneResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, java.util.OptionalInt, boolean, com.graphhopper.http.GHPointParam, java.util.OptionalLong, java.util.OptionalLong, java.util.OptionalLong, com.graphhopper.resources.IsochroneResource$ResponseType, double, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Feature.<init>(com.google.protobuf.GeneratedMessageV3$Builder)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.<init>(com.google.protobuf.GeneratedMessageV3$Builder)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.<init>(com.graphhopper.http.GraphHopperBundle, com.graphhopper.http.GraphHopperBundleConfiguration, com.graphhopper.GraphHopper)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
+}, {
+  "caller" : "com.graphhopper.resources.RouteResource.initHints(com.graphhopper.util.PMap, javax.ws.rs.core.MultivaluedMap)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.entrySet()"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.JsonNodeFactory.objectNode()"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putObject(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putArray(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ArrayNode.addObject()"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putPOJO(java.lang.String, java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, int)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, double)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.addFeatures(vector_tile.VectorTile$Tile$Feature)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addMessage(com.google.protobuf.AbstractMessage)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.createTileEnvelope(int, int)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.createTileEnvelope(int, int)",
+  "covered" : true,
   "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
 }, {
   "caller" : "no.ecc.vectortile.VectorTileEncoder.createTileEnvelope(int, int)",
   "covered" : false,
   "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.createPolygon(org.locationtech.jts.geom.Coordinate[])"
 }, {
-  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.buildPartial()",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.getUriInfo()"
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.build()"
 }, {
-  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.buildPartial()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.LazyStringList.getUnmodifiableView()"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.<init>(com.graphhopper.GraphHopper, com.graphhopper.gtfs.GtfsStorage)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.GeometryFactory.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.addAllMessages(java.lang.Iterable)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.LazyStringList.isEmpty()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.LazyStringList.addAll(java.util.Collection)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.isEmpty()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.mergeFrom(vector_tile.VectorTile$Tile$Layer)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.dispose()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.setup.Environment.jersey()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.jersey.setup.JerseyEnvironment.register(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.setup.Environment.lifecycle()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.lifecycle.setup.LifecycleEnvironment.manage(io.dropwizard.lifecycle.Managed)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.jersey.setup.JerseyEnvironment.register(java.lang.Class)"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : true,
+  "thirdPartyMethod" : "io.dropwizard.setup.Environment.healthChecks()"
+}, {
+  "caller" : "com.graphhopper.http.GraphHopperBundle.run(com.graphhopper.http.GraphHopperBundleConfiguration, io.dropwizard.setup.Environment)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.codahale.metrics.health.HealthCheckRegistry.register(java.lang.String, com.codahale.metrics.health.HealthCheck)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.addAllKeys(java.lang.Iterable)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.AbstractMessageLite.Builder.addAll(java.lang.Iterable, java.util.List)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.encode()",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.simplify.DouglasPeuckerSimplifier.simplify(org.locationtech.jts.geom.Geometry, double)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.encode()",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.isEmpty()"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
   "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
 }, {
-  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.getFirst(java.lang.Object)"
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.ObjectMapper.createObjectNode()"
 }, {
-  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.container.ContainerRequestContext.getHeaders()"
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, long)"
 }, {
-  "caller" : "com.graphhopper.http.TypeGPXFilter.filter(javax.ws.rs.container.ContainerRequestContext)",
-  "covered" : false,
-  "thirdPartyMethod" : "javax.ws.rs.core.MultivaluedMap.putSingle(java.lang.Object, java.lang.Object)"
-}, {
-  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Coordinate[], boolean, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.equals(java.lang.Object)"
-}, {
-  "caller" : "vector_tile.VectorTile.Tile.Builder.getLayersFieldBuilder()",
-  "covered" : false,
-  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.<init>(java.util.List, boolean, com.google.protobuf.AbstractMessage$BuilderParent, boolean)"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.JsonNodeFactory.objectNode()"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putObject(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putArray(java.lang.String)"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ArrayNode.addObject()"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
-  "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putPOJO(java.lang.String, java.lang.Object)"
-}, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
   "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, java.lang.String)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
   "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, int)"
 }, {
-  "caller" : "com.graphhopper.resources.MapMatchingResource.convertToTree(com.graphhopper.matching.MatchResult, boolean, boolean)",
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
-  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.put(java.lang.String, double)"
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.putPOJO(java.lang.String, java.lang.Object)"
 }, {
-  "caller" : "com.graphhopper.http.RealtimeBundle.<init>(com.graphhopper.http.RealtimeBundle, org.apache.http.client.HttpClient, com.graphhopper.http.RealtimeBundleConfiguration)",
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
   "covered" : false,
-  "thirdPartyMethod" : "org.glassfish.hk2.utilities.binding.AbstractBinder.<init>()"
+  "thirdPartyMethod" : "com.fasterxml.jackson.databind.node.ObjectNode.toString()"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "com.graphhopper.resources.MapMatchingResource.match(com.graphhopper.jackson.Gpx, javax.ws.rs.core.UriInfo, double, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String, java.lang.String, java.util.List, boolean, boolean, boolean, double)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, java.lang.String)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Layer.Builder.ensureKeysIsMutable()",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.LazyStringArrayList.<init>(com.google.protobuf.LazyStringList)"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.num2deg(int, int, int)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.<init>(double, double)"
 }, {
   "caller" : "com.graphhopper.resources.NearestResource.doGet(com.graphhopper.util.shapes.GHPoint, boolean)",
   "covered" : false,
   "thirdPartyMethod" : "javax.ws.rs.WebApplicationException.<init>(java.lang.String)"
 }, {
+  "caller" : "com.graphhopper.resources.RouteResource.gpxSuccessResponseBuilder(com.graphhopper.GHResponse, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.RouteResource.gpxSuccessResponseBuilder(com.graphhopper.GHResponse, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, java.lang.String)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.header(java.lang.String, java.lang.Object)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Value.Builder.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Feature.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.AbstractParser.<init>()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
+}, {
+  "caller" : "com.graphhopper.http.CORSFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.servlet.http.HttpServletResponse.setHeader(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.http.CORSFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)",
+  "covered" : true,
+  "thirdPartyMethod" : "javax.servlet.FilterChain.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse)"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.<clinit>()",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.MediaType.<init>(java.lang.String, java.lang.String)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Geometry)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getCoordinates()"
+}, {
+  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.UriInfo.getQueryParameters()"
+}, {
+  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object)"
+}, {
+  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.type(java.lang.String)"
+}, {
+  "caller" : "com.graphhopper.resources.SPTResource.doGet(javax.ws.rs.core.UriInfo, java.lang.String, boolean, com.graphhopper.http.GHPointParam, java.lang.String, java.util.OptionalLong, java.util.OptionalLong)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.Coordinate[], boolean, boolean)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Coordinate.equals(java.lang.Object)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Value.Builder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.mergeUnknownFields(com.google.protobuf.UnknownFieldSet)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiLineString)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiLineString.getNumGeometries()"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiLineString)",
+  "covered" : true,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.MultiLineString.getGeometryN(int)"
+}, {
+  "caller" : "no.ecc.vectortile.VectorTileEncoder.commands(org.locationtech.jts.geom.MultiLineString)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.Geometry.getCoordinates()"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Builder.getLayersFieldBuilder()",
+  "covered" : false,
+  "thirdPartyMethod" : "com.google.protobuf.RepeatedFieldBuilderV3.<init>(java.util.List, boolean, com.google.protobuf.AbstractMessage$BuilderParent, boolean)"
+}, {
+  "caller" : "vector_tile.VectorTile.Tile.Builder.<init>()",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.protobuf.GeneratedMessageV3.ExtendableBuilder.<init>()"
+}, {
+  "caller" : "com.graphhopper.http.DurationParam.<init>(java.lang.String, java.lang.String)",
+  "covered" : false,
+  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String, java.lang.String)"
+}, {
   "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.provide()",
   "covered" : false,
   "thirdPartyMethod" : "com.google.common.cache.LoadingCache.get(java.lang.Object)"
 }, {
-  "caller" : "com.graphhopper.http.OffsetDateTimeParam.<init>(java.lang.String)",
+  "caller" : "com.graphhopper.http.RealtimeFeedLoadingCache.<init>(com.graphhopper.http.RealtimeFeedLoadingCache)",
+  "covered" : true,
+  "thirdPartyMethod" : "com.google.common.cache.CacheLoader.<init>()"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
   "covered" : false,
-  "thirdPartyMethod" : "io.dropwizard.jersey.params.AbstractParam.<init>(java.lang.String)"
+  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.<init>()"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.translate(double, double)"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
+  "covered" : false,
+  "thirdPartyMethod" : "org.locationtech.jts.geom.util.AffineTransformation.scale(double, double)"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ok(java.lang.Object, javax.ws.rs.core.MediaType)"
+}, {
+  "caller" : "com.graphhopper.resources.PtMVTResource.doGetXyz(javax.servlet.http.HttpServletRequest, javax.ws.rs.core.UriInfo, int, int, int, java.util.List)",
+  "covered" : false,
+  "thirdPartyMethod" : "javax.ws.rs.core.Response.ResponseBuilder.build()"
 } ]

@@ -1,0 +1,111 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-parity-5509ea6c07a7bb256158602bf00dae1bb38b362c",
+      "title": "Stack-based Buffer Overflow in org.yaml:snakeyaml",
+      "description": "Affected versions of org.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer Overflow.",
+      "ecosystem": "maven",
+      "severity": "MEDIUM",
+      "references": {
+        "cveIds": [
+          "CVE-2022-41854"
+        ],
+        "cweIds": [
+          "CWE-121: Stack-based Buffer Overflow",
+          "CWE-787: Out-of-bounds Write"
+        ],
+        "owaspIds": [
+          "A06:2021 - Vulnerable and Outdated Components"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-w37g-rhq8-7m4j",
+          "https://nvd.nist.gov/vuln/detail/CVE-2022-41854"
+        ]
+      },
+      "announcedAt": "2022-11-11T19:00:31Z",
+      "ruleText": {
+        "id": "ssc-parity-5509ea6c07a7bb256158602bf00dae1bb38b362c",
+        "message": "Affected versions of org.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer Overflow.",
+        "severity": "WARNING",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2022-41854",
+          "cwe": [
+            "CWE-121: Stack-based Buffer Overflow",
+            "CWE-787: Out-of-bounds Write"
+          ],
+          "ghsa": "GHSA-w37g-rhq8-7m4j",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2022-11-11T19:00:31Z",
+          "references": [
+            "https://github.com/advisories/GHSA-w37g-rhq8-7m4j",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-41854"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "org.yaml:snakeyaml": "1.32"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "MODERATE",
+          "sca-vuln-database-identifier": "CVE-2022-41854",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Other"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 107727,
+              "rv_id": 1308447,
+              "rule_id": "pKU1N8n",
+              "version_id": "BjTbbA8",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-5509ea6c07a7bb256158602bf00dae1bb38b362c",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "org.yaml:snakeyaml",
+              "version": "<1.32"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ]
+      },
+      "reachability": "VERSION_SPECIFIER",
+      "vulnerableDependencies": [
+        {
+          "name": "org.yaml:snakeyaml",
+          "versionSpecifier": "<1.32"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "org.yaml:snakeyaml",
+          "versionSpecifier": "1.32"
+        }
+      ],
+      "cve": "CVE-2022-41854",
+      "ghsa": "GHSA-w37g-rhq8-7m4j",
+      "reachableIf": ""
+    }
+  ],
+  "totalCount": "1"
+}

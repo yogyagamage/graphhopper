@@ -1,0 +1,213 @@
+{
+  "advisories": [
+    {
+      "ruleId": "ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+      "title": "Uncontrolled Resource Consumption in com.google.protobuf:protobuf-java",
+      "description": "A Affected versions of com.google.protobuf:protobuf-java and com.google.protobuf:protobuf-javalite are vulnerable to Uncontrolled Resource Consumption. The vulnerability stems from a parsing issue in the Message-Type Extensions, affecting certain package versions and allowing for Denial of Service (DoS) attacks through inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields; exploiting it triggers conversions between mutable and immutable forms, potentially leading to extended garbage collection pauses.",
+      "ecosystem": "maven",
+      "severity": "HIGH",
+      "references": {
+        "cveIds": [
+          "CVE-2022-3510"
+        ],
+        "cweIds": [
+          "CWE-400: Uncontrolled Resource Consumption"
+        ],
+        "owaspIds": [
+          "A06:2021 - Vulnerable and Outdated Components"
+        ],
+        "urls": [
+          "https://github.com/advisories/GHSA-4gg5-vx3j-xwc7",
+          "https://nvd.nist.gov/vuln/detail/CVE-2022-3510"
+        ]
+      },
+      "announcedAt": "2022-12-12T15:30:33Z",
+      "ruleText": {
+        "id": "ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+        "message": "A Affected versions of com.google.protobuf:protobuf-java and com.google.protobuf:protobuf-javalite are vulnerable to Uncontrolled Resource Consumption. The vulnerability stems from a parsing issue in the Message-Type Extensions, affecting certain package versions and allowing for Denial of Service (DoS) attacks through inputs containing multiple instances of non-repeated embedded messages with repeated or unknown fields; exploiting it triggers conversions between mutable and immutable forms, potentially leading to extended garbage collection pauses.",
+        "severity": "ERROR",
+        "metadata": {
+          "confidence": "HIGH",
+          "category": "security",
+          "cve": "CVE-2022-3510",
+          "cwe": [
+            "CWE-400: Uncontrolled Resource Consumption"
+          ],
+          "ghsa": "GHSA-4gg5-vx3j-xwc7",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components"
+          ],
+          "publish-date": "2022-12-12T15:30:33Z",
+          "references": [
+            "https://github.com/advisories/GHSA-4gg5-vx3j-xwc7",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-3510"
+          ],
+          "release": "ga",
+          "sca-fix-versions": [
+            {
+              "com.google.protobuf:protobuf-java": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-java": "3.16.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.21.7"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.20.3"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.19.6"
+            },
+            {
+              "com.google.protobuf:protobuf-javalite": "3.16.3"
+            }
+          ],
+          "sca-kind": "reachable",
+          "sca-schema": 20230302,
+          "sca-severity": "HIGH",
+          "sca-vuln-database-identifier": "CVE-2022-3510",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Denial-of-Service (DoS)"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 93725,
+              "rv_id": 1315662,
+              "rule_id": "KxUvb34",
+              "version_id": "7ZTBXqP",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-cb14b0aa-021e-49eb-a25a-79b30cac0a94",
+              "origin": "custom"
+            }
+          }
+        },
+        "r2c-internal-project-depends-on": {
+          "depends-on-either": [
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "version": ">=3.0.0, <3.16.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "version": ">=3.17.0, <3.19.6"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "version": ">=3.20.0, <3.20.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-java",
+              "version": ">=3.21.0, <3.21.7"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-javalite",
+              "version": ">=3.0.0, <3.16.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-javalite",
+              "version": ">=3.17.0, <3.19.6"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-javalite",
+              "version": ">=3.20.0, <3.20.3"
+            },
+            {
+              "namespace": "maven",
+              "package": "com.google.protobuf:protobuf-javalite",
+              "version": ">=3.21.0, <3.21.7"
+            }
+          ]
+        },
+        "languages": [
+          "java",
+          "kotlin",
+          "scala"
+        ],
+        "patterns": [
+          {
+            "metavariable-regex": {
+              "metavariable": "$PACKAGE",
+              "regex": "(com.google.protobuf|com.google.protobuf)"
+            }
+          },
+          {
+            "pattern-inside": "import $PACKAGE;\n...\n"
+          },
+          {
+            "metavariable-regex": {
+              "metavariable": "$FUNC",
+              "regex": "(mergeFrom|mergeGroup|addRepeatedField|setRepeatedField| setField)"
+            }
+          },
+          {
+            "pattern": "$VAR.$FUNC(...)"
+          }
+        ]
+      },
+      "reachability": "REACHABILITY",
+      "vulnerableDependencies": [
+        {
+          "name": "com.google.protobuf:protobuf-java",
+          "versionSpecifier": ">=3.0.0, <3.16.3"
+        }
+      ],
+      "safeDependencies": [
+        {
+          "name": "com.google.protobuf:protobuf-java",
+          "versionSpecifier": "3.21.7"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-java",
+          "versionSpecifier": "3.20.3"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-java",
+          "versionSpecifier": "3.19.6"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-java",
+          "versionSpecifier": "3.16.3"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-javalite",
+          "versionSpecifier": "3.21.7"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-javalite",
+          "versionSpecifier": "3.20.3"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-javalite",
+          "versionSpecifier": "3.19.6"
+        },
+        {
+          "name": "com.google.protobuf:protobuf-javalite",
+          "versionSpecifier": "3.16.3"
+        }
+      ],
+      "cve": "CVE-2022-3510",
+      "ghsa": "GHSA-4gg5-vx3j-xwc7",
+      "reachableIf": ""
+    }
+  ],
+  "totalCount": "1"
+}
