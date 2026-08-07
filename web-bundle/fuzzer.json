@@ -1,0 +1,55 @@
+[    {
+      "entryPoint": "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+      "thirdPartyMethod": "com.google.common.cache.CacheBuilder.newBuilder()",
+      "directCaller": "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+      "path": [
+        "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+        "com.google.common.cache.CacheBuilder.newBuilder()"
+      ],
+      "methodSources": [
+        "@Override\npublic void start() {\n    this.transfers = new HashMap<>();\n    for (Map.Entry<String, GTFSFeed> entry : this.gtfsStorage.getGtfsFeeds().entrySet()) {\n        this.transfers.put(entry.getKey(), new Transfers(entry.getValue()));\n    }\n    this.executor = Executors.newSingleThreadExecutor();\n    this.cache = // PATH: Test should invoke the next CacheBuilder.newBuilder(...) [step in execution path]\n    CacheBuilder.newBuilder().maximumSize(1).refreshAfterWrite(1, TimeUnit.MINUTES).build(new CacheLoader<String, RealtimeFeed>() {\n        public RealtimeFeed load(String key) {\n            return fetchFeedsAndCreateGraph();\n        }\n\n        @Override\n        public ListenableFuture<RealtimeFeed> reload(String key, RealtimeFeed oldValue) {\n            ListenableFutureTask<RealtimeFeed> task = ListenableFutureTask.create(() -> fetchFeedsAndCreateGraph());\n            executor.execute(task);\n            return task;\n        }\n    });\n}"
+      ],
+      "constructors": [
+        "@Inject\nRealtimeFeedLoadingCache(BaseGraph baseGraph, EncodingManager encodingManager, GtfsStorage gtfsStorage, HttpClient httpClient, RealtimeBundleConfiguration bundleConfiguration) {\n    this.baseGraph = baseGraph;\n    this.encodingManager = encodingManager;\n    this.gtfsStorage = gtfsStorage;\n    this.bundleConfiguration = bundleConfiguration;\n    this.httpClient = httpClient;\n}",
+        "1() {\n}"
+      ],
+      "fieldDeclarations": [
+        "private final HttpClient httpClient;",
+        "private final BaseGraph baseGraph;",
+        "private final EncodingManager encodingManager;",
+        "private final GtfsStorage gtfsStorage;",
+        "private final RealtimeBundleConfiguration bundleConfiguration;",
+        "private ExecutorService executor;",
+        "private LoadingCache<String, RealtimeFeed> cache;",
+        "private Map<String, Transfers> transfers;"
+      ],
+      "setters": [
+        "@Override\npublic void dispose(RealtimeFeed instance) {\n    this.executor.shutdown();\n}",
+        "@Override\npublic void start() {\n    this.transfers = new HashMap<>();\n    for (Map.Entry<String, GTFSFeed> entry : this.gtfsStorage.getGtfsFeeds().entrySet()) {\n        this.transfers.put(entry.getKey(), new Transfers(entry.getValue()));\n    }\n    this.executor = Executors.newSingleThreadExecutor();\n    this.cache = CacheBuilder.newBuilder().maximumSize(1).refreshAfterWrite(1, TimeUnit.MINUTES).build(new CacheLoader<String, RealtimeFeed>() {\n        public RealtimeFeed load(String key) {\n            return fetchFeedsAndCreateGraph();\n        }\n\n        @Override\n        public ListenableFuture<RealtimeFeed> reload(String key, RealtimeFeed oldValue) {\n            ListenableFutureTask<RealtimeFeed> task = ListenableFutureTask.create(() -> fetchFeedsAndCreateGraph());\n            executor.execute(task);\n            return task;\n        }\n    });\n}"
+      ],
+      "imports": [
+        "com.conveyal.gtfs.GTFSFeed",
+        "com.google.common.cache.CacheBuilder",
+        "com.google.common.cache.CacheLoader",
+        "com.google.common.cache.LoadingCache",
+        "com.google.common.util.concurrent.ListenableFuture",
+        "com.google.common.util.concurrent.ListenableFutureTask",
+        "com.google.transit.realtime.GtfsRealtime",
+        "com.google.transit.realtime.GtfsRealtime.FeedMessage",
+        "com.graphhopper.gtfs.GtfsStorage",
+        "com.graphhopper.gtfs.RealtimeFeed",
+        "com.graphhopper.gtfs.Transfers",
+        "com.graphhopper.routing.util.EncodingManager",
+        "com.graphhopper.storage.BaseGraph",
+        "org.apache.http.HttpEntity",
+        "org.apache.http.HttpResponse",
+        "org.apache.http.client.HttpClient",
+        "org.apache.http.client.methods.HttpGet",
+        "org.apache.http.client.methods.HttpUriRequest"
+      ],
+      "testTemplate": "package com.graphhopper.http;\n\npublic class RealtimeFeedLoadingCachestart_CacheBuildernewBuilderFikaTest {\n\n    @Test\n    public void testStart() {\n    }\n}",
+      "conditionCount": 1,
+      "callCount": 1,
+      "lineNumber": 75,
+      "covered": true
+    }]

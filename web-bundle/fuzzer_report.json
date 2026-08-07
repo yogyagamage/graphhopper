@@ -1,0 +1,15 @@
+[
+    {
+        "entryPoint": "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+        "directCaller": "com.graphhopper.http.RealtimeFeedLoadingCache.start()",
+        "thirdPartyMethod": "com.google.common.cache.CacheBuilder.newBuilder()",
+        "lineNumber": 75,
+        "maxTime": 17,
+        "timeSource": "jsonl",
+        "coverageStatus": "uncovered_class",
+        "coverageDetail": "RealtimeFeedLoadingCache.java line coverage is 0.00%",
+        "crashFound": false,
+        "fuzzerSuccess": false,
+        "coverageReportFile": "/Tmp/gamageyo/fika/experiments/graphhopper/web-bundle/fuzz-coverage-reports/RealtimeFeedLoadingCache_75_report.txt"
+    }
+]
